@@ -3,19 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="icon" href="_media/microservices.ico" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    body {
+      font-size: 18px; /* Change this to your preferred size */
+    }
+    h1 {
+      font-size: 32px; /* Adjust heading sizes */
+    }
+    h2 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    p {
+    text-align: justify;
+    }
+    .markdown-section {
+    padding: 50px 60px 50px,
+    }
+
+  </style>  
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      subMaxLevel: 2,
+      name: 'ARCAD Transformer Microservices for VScode',
+      loadSidebar: true,
+      loadNavbar: true,
+      homepage: 'index.md'
     }
   </script>
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
