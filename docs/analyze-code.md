@@ -38,12 +38,16 @@ Once the analysis is complete, you are notified of its status and prompted to ch
 
 The **Extraction Report** window displays the analysis status, including the equivalent IBM i command execution.  
 
-## Viewing Results  
+- **Problems**: lists existing errors in an extracted code in the file.  
 
 After the analysis is completed, the bottom panel contains three tabs specific to Transformer Microservices:  
-
-- **Problems**: lists existing errors in an extracted code in the file.  
-- **Microservices Problems**: displays errors resulting from the extraction analysis.  
+ **Microservices Problems**: displays errors resulting from the extraction analysis.
 - **Microservices I/O Runtime Paths**: shows runtime input/output paths observed during execution.  
 
 These insights help you review and refine the extraction process.  
+
+## Microservices - Problems view
+
+After the analysis is completed, the bottom panel contains three tabs specific to Transformer Microservices:  
+ **Microservices Problems**: displays errors resulting from the extraction analysis.
+

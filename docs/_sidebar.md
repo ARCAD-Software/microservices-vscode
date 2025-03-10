@@ -6,11 +6,12 @@
     * [Server Connection](server-connection.md)
 
 * Features
-    * [Code Analysis](analyze-code.md)
     * [Code Extraction](extractions.md)
-    * [Code Externalisation](externalisations.md)
-    * [Usage](usage.md)
+        * [Launch a Code Analysis](analyze-code.md)
+        * [Viewing Results](results.md)
+        * [Code Externalisation](externalisations.md)
+    * [Code Similarity](code-similarity.md)
+    * [Web Services](webservices.md)
     
 * Additional Ressources
- 
     * <a href="ARCAD-Transformer-Microservices-Installation-Guide.pdf" target="_blank">Microservices Server Installation Guide</a>

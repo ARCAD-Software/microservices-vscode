@@ -17,9 +17,6 @@ Enter the name, Host or IP address of the IBM i partition hosting the server.
 Enter a valid user login and password. This user must be declared on the server and will be the user that will execute any operations on the IBM i.  
 Check the **Save password** if needed.
 
-**Private Key**  
-?
-
 > **Step 3:** You can either click on the **Connect** button to connect immediately, or the **Save & Exit** button to connect later.
 
 > **Result:** You are successfully connected to the server.
@@ -55,11 +52,11 @@ From the **Extensions** section, open the ARCAD-Transformer Microservices extens
 
 ![Extensions](_media/tms-extensions.png)
 
-Check the **Enable trace in ARCAD-Transformer Microservices** output box to (?)
+Check the **Enable trace in ARCAD-Transformer Microservices output** box to populate the Output view for get the logs and trace the steps of the process.
 
 Set the **Port Number** used to connect to the ARCAD-Transformer Microservices Server.  
 By default, the server used is **5265**.  
 
-It is possible to use a secure connection (**HTTPS**), make sure to set the path to a local file containing the server's certificate chain in PEM format.
+It is possible to use a secure connection (**HTTPS**), make sure to set the path to a local file containing the server's certificate chain in PEM format. Add a `0` at the end of your port number when using HTTPS.
 
 The **Field Usages Coloring** settings section allows you to customize the visual presentation of your returned results, enhancing clarity and differentiation for better readability.
