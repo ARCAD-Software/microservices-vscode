@@ -4,7 +4,7 @@ Using the Transformer Microservices enxtension, you can efficiently analyze code
 
 Each extraction analysis allows you to review the results of the process, once it is completed. These analyses can be accessed in the Extraction Analyses section of the rule's editor.
 
-## Launch a Code Analysis  
+## Launching a Code Analysis  
 
 > **Step 1:** Open a component that contains the code to analyze by clicking on it.
 
@@ -32,22 +32,23 @@ There are two ways to set a rule.
 
 Press **Enter** to launch the analysis.
 
-Once the analysis is complete, you are notified of its status and prompted to check the results.
+Once the analysis is completed successfully, you are notified of its status.
 
-![Analysis notification](_media/tms-analysis-notification.png)
-
-The **Extraction Report** window displays the analysis status, including the equivalent IBM i command execution.  
+![Analysis ok](_media/tms-extraction-ok.png)
 
 - **Problems**: lists existing errors in an extracted code in the file.  
 
 After the analysis is completed, the bottom panel contains three tabs specific to Transformer Microservices:  
  **Microservices Problems**: displays errors resulting from the extraction analysis.
-- **Microservices I/O Runtime Paths**: shows runtime input/output paths observed during execution.  
 
-These insights help you review and refine the extraction process.  
 
 ## Microservices - Problems view
 
-After the analysis is completed, the bottom panel contains three tabs specific to Transformer Microservices:  
- **Microservices Problems**: displays errors resulting from the extraction analysis.
+If the analysis completed but contains noticeable errors, you are notified of its status and prompted to check the results by clicking the **View Extraction Report** button.
 
+![Analysis notification](_media/tms-analysis-notification.png)
+
+The **Extraction Report** window displays the analysis status, including the equivalent IBM i command execution.  
+The error encountered is described in detail and the corresponding errors are found in the **Microservices - Problems** tab in the bottom panel.
+
+![Analysis Error](_media/tms-microservices-problems.png)
