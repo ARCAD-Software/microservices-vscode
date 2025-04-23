@@ -33,15 +33,15 @@ From the **Similarity Analysis Result**, you can also initiate a new **Code Simi
 
 ---
 
-## Launching a Code Similarity Analysis
+## Launching a Code Similarity Analysis From Component
 
 ### Step 1: Open the Component
 
 Open your RPG component from the repository, then select the code block you want to search for similarities.
 
 > ⚠️ **IMPORTANT**:  
-> Code Similarity can only be executed at the *Repository* level.  
-> Executing it outside the Version level will result in an error.
+> Code Similarity can be executed at the *Repository* level.  
+> Code Similarity can be executed only CHECKEDOUT and UPDATED components in Version.
 
 ### Step 2: Access the Context Menu
 
@@ -68,6 +68,20 @@ Fill out the **Code Similarity** settings:
 - **Load Pseudocode**: Choose whether to load generated pseudocode during the process.
 
 Click **Enter** to launch the analysis.
+## Launching a Code Similarity Analysis From Existing Extraction
+
+> ⚠️ **IMPORTANT**:  
+> Code Similarity can be executed at the *Repository* level.  
+> Code Similarity can be executed only on CHECKEDOUT and UPDATED components in Version.
+
+To search for similar code blocks from an existing extraction analysis:
+
+1. Expand the **Extraction** or **Externalization** node.
+2. Select an extraction analysis.
+3. Right-click the analysis and choose:  
+  **Code Similarity > Search for similar code**
+
+![Code Similarity Option](_media/tms-codesimilarity-extractionview.png)
 
 ---
 
