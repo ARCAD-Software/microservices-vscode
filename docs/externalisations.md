@@ -1,2 +1,2 @@
-# Code externalisation
+# Code externalization
 [Your text here]

@@ -1,0 +1,210 @@
+# Externalization Overview
+
+Externalization qualifies the process that helps the developer to extract the audited code, under an extraction analysis, from the origin source to a new component as an ILE procedure.  
+This process requires configuring and customizing several aspects of the procedure beforehand.
+
+These aspects include:
+
+- Setting the name of the externalization
+- Defining the name, keyword, and order of the parameters
+- Setting the prototype name
+- Defining the name of the generated component containing the externalized code
+- Selecting the type of ILE object to be created
+
+Once these configurations are complete, the dedicated automation process can be launched. This automation process is completed in two steps:
+
+1. **Recalculating** the extraction to ensure its relevance based on the customized configuration
+2. **Applying** the modifications to the designated ARCAD version as specified by the Microservice Rule
+
+---
+
+> ⚠️ **Important:**  
+> Externalization can **only be performed at the version level**.  
+> It is **not possible to execute an externalization at the repository level**.  
+> This is because the changes are version-specific and are applied only to the ARCAD version selected during the configuration phase.
+
+## Configuring and Launching an Externalization
+
+Follow the steps below to configure and launch an externalization:
+
+### Step 1
+Right-click to open the contextual menu from the extraction  to externalize from the section *Extraction* in the Rules View.
+
+### Step 2
+Click on **Extract as ILE procedure** to start customizing the procedure to be created.
+
+![Externalization View](_media/tms-extract-as-ile-option.png) 
+
+### Step 3
+From the *Procedure Naming* window, specify the naming of the procedure.
+
+![Procedure View](_media/tms-externalization-start.png)
+
+Click **Next** when you're done configuring the procedure name.
+
+For each parameter, you can:
+
+- **Edit** the name and keyword using the *Edit* icon.
+- **Change the order** using the *Up* and *Down* icons.
+
+> **Reference:** For more details on modifying parameters, see the [Editing Parameters](#editing-parameters) section.
+
+![Parameter View](_media/tms-externalization-parameter-view.png)
+
+Click **Save**.
+
+### Step 4: Define Components,ProtoType and Bindings<> for Externalization
+
+From the *Procedure Components* page, define the **Name**, **Type**, and **Source File** for every new component to be created. 
+
+You will configure the following components:
+
+#### **Component**
+
+- **Name**: Provide a unique name for this component.
+
+![Component Name](_media/tms-externalization-component-name.png)
+
+- **Type**: Select the appropriate component type from the available options (e.g., `RPGLE`).
+
+![Component Type](_media/tms-externalization-component-type.png)
+
+- **Source File**: Choose the source file from the drop-down list, which will be populated based on your ARCAD application topology.
+
+![Component Source-File](_media/tms-externalization-component-sourcefile.png)
+
+#### **Prototype**
+
+- **Name**: Specify a meaningful name for the prototype.
+
+![ProtoType Name](_media/tms-externalization-prototype-name.png)
+
+- **Type**: Typically, this is set as `Prototype`.
+
+![ProtoType Type](_media/tms-externalization-prototype-type.png)
+
+- **Source File**: Select the relevant source file for the prototype from the dropdown options.
+
+![ProtoType Source-File](_media/tms-externalization-component-sourcefile.png)
+
+#### **Binding**
+
+- **Name**: Assign a unique name to the binding object.
+
+![Biniding Name](_media/tms-externalization-parameter-view.png)
+
+- **Type**: Choose the binding type (e.g., `PGM`, `SRVPGM`).
+
+![Biniding Type](_media/tms-externalization-parameter-view.png)
+
+- **Description**: Optionally, provide a description for the binding object.
+
+![Biniding Description](_media/tms-externalization-parameter-view.png)
+
+> **Important:**  
+> Options for **component types** and **source files** are populated automatically from your ARCAD application topology.
+
+> **Warning:**  
+> Ensure that the correct association between source files and their corresponding types is verified to avoid issues during the generation process.
+
+> **Reference:**  
+> For more information about editing generated components, refer to the *Editing Generated Components* section.
+
+### Step 5
+Click **Finish** to launch the externalization execution process.
+
+> **Note:** All configuration changes are automatically saved.
+
+> **Important:**  
+> The externalization execution process starts by performing a new code extraction analysis based on the parameters used in the original code analysis.  
+> Once this analysis is successfully validated, the process proceeds to the second step: creating and applying the necessary modifications to the target ARCAD version.
+
+You can monitor this step using the **Background job** view, which is automatically displayed in the *ARCAD Transformer Microservices* perspective.
+
+---
+
+## Editing Parameters
+
+When editing the parameters, you can customize the following:
+
+- **Order:** Click the *Up* or *Down* icons to adjust the position of a parameter.
+- **Name and Keyword:** Click the *Edit* icon to open the editor, then define a new name and select a new keyword.
+
+> **Important:**  
+> The keyword drop-down list includes only the keywords managed by the externalization process:  
+> - `RETURN`: The return value is treated as a reference-type parameter.  
+> - `CONST`: A temporary copy is created and passed by address.  
+> - `VALUE`: The parameter is passed by value.
+
+---
+
+## Editing Generated Components
+
+You can configure three components:
+
+1. **Component:** Contains both the procedure interface and calculation specifications.
+2. **Prototype:** Contains the prototype definition.
+3. **Binding:** The ILE program or service program object created.
+
+Each should include:
+
+- A unique name and/or description
+- A selected component type
+- A source file from the drop-down list
+
+> **Important:**  
+> Options for type and source file are populated based on your ARCAD application topology.
+
+> **Warning:**  
+> Verify the association between source files and their source types to avoid issues.
+
+---
+
+## Understanding the Externalization Results
+
+After completion, the extraction analysis icon is updated based on the result status:
+
+| Icon | Status |
+|------|--------|
+| ❌   | Recalculation step failed (no ILE generation) |
+| ⚠️   | Recalculation succeeded, generation failed or aborted |
+| ✅   | Both steps succeeded |
+
+To review results:  
+Open the **Component Version** view for the designated ARCAD version and locate your components.
+
+---
+
+## Deleting an Externalization Result
+
+An externalization result is linked to an extraction analysis.
+
+To delete it, delete the corresponding extraction analysis.
+
+> **Warning:**  
+> Deleting an externalization result does **not** undo changes made to original/generated components.  
+> You must **manually remove** those changes
+
+---
+
+
+## Externalization Execution Errors
+
+During the externalization process, you may encounter various errors related to the execution of the steps. These errors are typically displayed in the **Microservices Problem-Panel** view and can include:
+
+- **Recalculation Failure**: If the recalculation step fails, the extraction cannot proceed, and no ILE generation occurs. You will see an error icon (❌) indicating this issue.
+  
+- **Generation Failure or Abortion**: If the recalculation step succeeds, but the generation step fails or is aborted, a warning icon (⚠️) will appear.
+
+- **Successful Completion**: If both steps are successful, a check mark (✅) will indicate successful completion.
+
+### Error Handling Steps:
+
+1. **Verify Configuration**: Check that all parameters and components are configured correctly, including names, types, and source files.
+   
+2. **Review Logs**: Open the **Microservices Problem-Panel** view to inspect logs and identify any errors that occurred during the recalculation or generation steps.
+
+3. **Retry the Process**: If any errors are identified, adjust your configuration as needed and retry the externalization process.
+
+> **Note:**  
+> Errors related to the configuration should be resolved before restarting the externalization to avoid repeated failures. Check the error descriptions for specific guidance on resolving issues.

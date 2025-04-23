@@ -2,7 +2,7 @@
     <img src="./microservices.png" />
 </div>
 
-# ARCAD-Transformer Microservices for VSCode extension
+# ARCAD-Transformer Microservices VSCode extension
 ![https://marketplace.visualstudio.com/items?itemName=arcadsoftware.arcad-microservices](https://img.shields.io/visual-studio-marketplace/v/arcadsoftware.arcad-microservices)
 ![https://marketplace.visualstudio.com/items?itemName=arcadsoftware.arcad-microservices](https://img.shields.io/visual-studio-marketplace/i/arcadsoftware.arcad-microservices)
 

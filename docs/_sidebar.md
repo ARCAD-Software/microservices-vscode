@@ -9,7 +9,7 @@
     * [Code Extraction](extractions.md)
         * [Launch a Code Analysis](analyze-code.md)
         * [Viewing Results](results.md)
-        * [Code Externalisation](externalisations.md)
+        * [Externalization](externalizations.md)
     * [Code Similarity](codesimilarity.md)
         * [Code Similarity Overview](code-similarity-principles.md)
         * [Code Similarity execution](code-similarity.md)
