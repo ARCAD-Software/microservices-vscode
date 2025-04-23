@@ -1,5 +1,4 @@
 
-
 # Code Similarity Overview
 
 The Code Similarity search in ARCAD Transformer Microservices involves finding and comparing pieces of code to identify similarities. This process starts by extracting pseudocode from a source, then searching the repository to locate other instances of similar code.
