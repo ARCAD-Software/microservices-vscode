@@ -6,6 +6,8 @@
     * [Server Connection](server-connection.md)
 
 * Features
+    * [Rules](rule.md)
+    * [Projects](project.md)
     * [Code Extraction](extractions.md)
         * [Launch a Code Analysis](analyze-code.md)
         * [Viewing Results](results.md)

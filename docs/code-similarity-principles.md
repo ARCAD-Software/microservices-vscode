@@ -31,8 +31,8 @@ Pseudocode can be generated in two ways:
 - At the **application** repository level, which creates pseudocode for all relevant sources within the repository.
 - At the **version** level, which generates pseudocode for sources within a specific version.
 
-> **Important**  
-> As of now, only *RPGLE* and *SQLRPGLE* sources are supported for pseudocode generation; other source types are not compatible.
+> [!Warning] 
+> As of now, only *RPGLE* and *SQLRPGLE* sources are supported for pseudocode generation. Other source types are not compatible.
 
 By generating pseudocode from a given block of source code, you can find similar code by comparing the pseudocode with the entire content of the repository to identify matches.
 
@@ -45,11 +45,11 @@ This whole process is facilitated by the `AGENPSCSRC` command.
 
 The Code Similarity process requires the following parameters to be specified:
 
-- **Minimum Percentage of Matching**: Specifies the threshold for how much code needs to match.
-- **Minimum Number of Components**: Sets the minimum number of code components that must be similar for a match to be considered.
+- **Minimum Percentage of Matching**: specifies the threshold for how much code needs to match.
+- **Minimum Number of Components**: sets the minimum number of code components that must be similar for a match to be considered.
 
 > **Reference**  
-> For more information about these parameters, refer to the [Launching Code Similarity Analysis](analyze-code.md) section.
+> For more information about these parameters, refer to the [Launching Code Similarity Analysis](analyze-code.md) documentation.
 
 This approach ensures a thorough and accurate identification of similar code across the entire repository.
 
@@ -59,4 +59,4 @@ This approach ensures a thorough and accurate identification of similar code acr
 The conversion of source code to pseudocode helps identify similar code in the repository.
 
 > **Reference**  
-> The pseudocode generation is based on rules to verify the consistency of the source code. These rules are defined in the tables in the [Code Conversion](appendix.md).
+> The pseudocode generation is based on rules to verify the consistency of the source code. These rules are defined in the tables in the [Code Conversion](appendix.md) documentation page.

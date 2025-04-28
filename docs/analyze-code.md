@@ -6,17 +6,17 @@ Each extraction analysis allows you to review the results of the process, once i
 
 ## Launching a Code Analysis  
 
-> **Step 1:** Open a component that contains the code to analyze by clicking on it.
+**Step 1** Open a component that contains the code to analyze by clicking on it.
 
 ![Component](_media/tms-component.png)
 
-> **Step 2:** Select the code you want to analyze within the page.
+**Step 2** Select the code you want to analyze within the page.
 
-> **Step 3:** Right-click on the selected code and click **Analyze for Extraction**.
+**Step 3** Right-click on the selected code and click **Analyze for Extraction**.
 
 ![Code Analysis](_media/tms-analyze.png)
   
-> **Step 3:** Select the **Rule** to base the analysi on.
+**Step 4** Select the **Rule** to base the analysi on.
 
 ![Set Rule](_media/tms-analysis-rule.png)
 
@@ -26,9 +26,9 @@ There are two ways to set a rule.
 | ----------------- | ----------------- |
 | Define the new Rule's **Name**, select an **Project** from the ones available in the list or create a new one, set a description of the Rule, choose the analysis type: `PGM` (Program) or `SRVPGM` (Service Program) and then press **Enter** to launch the analysis. | Select a Rule from the existing ones in the list, set a description and then  |
 
-> **Step 4:** Choose the analysis type:  
-   - `PGM` (Program) or
-   - `SRVPGM` (Service Program)
+**Step 4** Choose the analysis type:  
+- `PGM` (Program) or
+- `SRVPGM` (Service Program)
 
 Press **Enter** to launch the analysis.
 
@@ -40,7 +40,6 @@ Once the analysis is completed successfully, you are notified of its status.
 
 After the analysis is completed, the bottom panel contains three tabs specific to Transformer Microservices:  
  **Microservices Problems**: displays errors resulting from the extraction analysis.
-
 
 ## Microservices - Problems view
 

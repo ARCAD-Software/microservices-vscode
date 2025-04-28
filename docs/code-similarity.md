@@ -23,6 +23,7 @@ Results appear in the **Microservices Code Similarity Result** view, which summa
 
 ![Execution Result](_media/tms-code-similarity-execution-result.png)
 
+The results view provides details about the following elements:
 - Component name, object type, application, environment, and version
 - Start and end lines of the similar code block
 
@@ -35,51 +36,56 @@ From the **Similarity Analysis Result**, you can also initiate a new **Code Simi
 
 ## Launching a Code Similarity Analysis From Component
 
-### Step 1: Open the Component
+Follow the subsequent steps to launch a Code Similarity analysis from a component.
 
-Open your RPG component from the repository, then select the code block you want to search for similarities.
+**Step 1** Open your RPG component from the repository, then select the code block you want to search for similarities.
 
-> ⚠️ **IMPORTANT**:  
-> Code Similarity can be executed at the *Repository* level.  
-> Code Similarity can be executed only CHECKEDOUT and UPDATED components in Version.
+> [!Note]
+> Code Similarity can be executed at the *Repository* level.
 
-### Step 2: Access the Context Menu
+> [!Warning]
+> Code Similarity can be executed only on **checked out** and **updated** components in the version.
 
-Right-click and choose:  
-**ARCAD Transformer Microservices > Search for similar codes**
+**Step 2** Right-click on the selected code portion and click the **ARCAD Transformer Microservices > Search for similar codes** option.
 
 ![Search Component View](_media/tms-searchcode-similarity-componentview.png)  
 
 ![Search View](_media/tms-searchcode-similarity-view.png)
 
-### Step 3: Configure Parameters
+**Step 3** Configure the parameters and fill out the **Code Similarity** settings:
 
-Fill out the **Code Similarity** settings:
+- **Project**: select an ARCAD Transformer Microservices Project from the ones available in the dropdown list. If none exists, click **New Project** to create a new one.
+- **Minimum Similarity Match (%)**: set the similarity threshold (1–100).
 
-- **Project**: Select an ARCAD Transformer Microservices Project from the dropdown. If none exists, click **New Project** to create one.
-- **Minimum Similarity Match (%)**: Set the similarity threshold (1–100).
-  > [!TIP]  
-  > A 50% match means a 10-line block must share at least 5 lines with another block to be flagged as similar.
+> [!TIP]  
+> A 50% match means a 10-line block must share at least 5 lines with another block to be determined as similar.
 
 - **Minimum Components Found**: Set how many components must include similar code (1–100).
-  > [!TIP]  
-  > If set to 5, results are shown only when similar blocks are found in five or more components.
 
-- **Load Pseudocode**: Choose whether to load generated pseudocode during the process.
+> [!TIP]  
+> If set to 5, results are shown only when similar blocks are found in five or more components.
 
-Click **Enter** to launch the analysis.
+- **Load Pseudocode**: choose whether to load generated pseudocode during the process.
+
+Press **Enter** to launch the analysis.
+
+---
+
 ## Launching a Code Similarity Analysis From Existing Extraction
 
-> ⚠️ **IMPORTANT**:  
-> Code Similarity can be executed at the *Repository* level.  
-> Code Similarity can be executed only on CHECKEDOUT and UPDATED components in Version.
+> [!Note]
+> Code Similarity can be executed at the *Repository* level.
 
-To search for similar code blocks from an existing extraction analysis:
+> [!Warning]
+> Code Similarity can be executed only on **checked out** and **updated** components in the version.
 
-1. Expand the **Extraction** or **Externalization** node.
-2. Select an extraction analysis.
-3. Right-click the analysis and choose:  
-  **Code Similarity > Search for similar code**
+Follow the subsequent steps to search for similar code blocks from an existing extraction analysis.
+
+**Step 1** Expand the **Extraction** or **Externalization** node.
+
+**Step 2** Select an extraction analysis.
+
+**Step 3** Right-click on the analysis and select the **Code Similarity > Search for similar code** option.
 
 ![Code Similarity Option](_media/tms-codesimilarity-extractionview.png)
 
@@ -89,10 +95,7 @@ To search for similar code blocks from an existing extraction analysis:
 
 ### Navigating Results
 
-After the search completes, you can view and compare pseudocode by:
-
-1. Right-clicking a match in the **Code Similarity Results** view
-2. Selecting **Show Compared Pseudocode**
+After the search completes, you can view and compare pseudocode by right-clicking on a match in the **Code Similarity Results** view and selecting the **Show Compared Pseudocode** option.
 
 This opens a comparison panel:
 
@@ -103,7 +106,7 @@ This opens a comparison panel:
 - Left panel: **Source code**
 - Right panel: **Compared code**
 
-You can reopen a result by right-clicking and selecting **Open**, or re-execute it with **Execute**.
+You can reopen a result by right-clicking and selecting **Open**, or re-execute it by clicking on the **Execute** button.
 
 ![Execute Again](_media/tms-code-similarity-execute-extractionview.png)  
 
@@ -111,43 +114,30 @@ You can reopen a result by right-clicking and selecting **Open**, or re-execute 
 
 ### Launching Additional Searches
 
-To run another similarity search based on current findings:
-
-- Right-click a match in the results view
-- Select **Search for Similar Codes**
+To run another similarity search based on current findings, you can right-click on a match in the results view and select the **Search for Similar Codes** option.
 
 ![New Search](_media/tms-code-similarity-execute-extraction.png)
 
 ### Running an Extraction Analysis
 
-You can also perform an **Extraction Analysis**:
-
-- Right-click a match in the results
-- Choose **Analyze for Extraction**
+You can also perform an **Extraction Analysis** by right-clicking on a match in the results and selecting the **Analyze for Extraction** option.
 
 ![Analyze](_media/tms-code-similarity-execute-extraction.png)
 
 > **Reference**:  
-> For more information, refer to the [Extraction Analysis](analyze-code.md) for more details documentation.
+> For more information, refer to the [Extraction Analysis](analyze-code.md) documentation.
 
 ---
 
 ## Deleting a Code Similarity Search
 
 > [!WARNING]  
-> Deleting a similarity search is irreversible.
+> Deleted similarity searches cannot be recovered.
 
-To delete:
-
-1. Expand the **Project** node > **Code Similarity**
-2. Right-click a similarity and choose **Remove**
+To delete a Code Similarity search, expand the **Project** node > **Code Similarity**, right-click on the code similarity search to delete and click on  **Remove**.
 
 ![Delete from Project View](_media/tms-code-similarity-delete-projectview.png)
 
-To delete from an extraction view:
-
-1. Expand the **Extraction** node
-2. Right-click > **Code Similarity** > **Execution History**
-3. Right-click a result and select **Remove**
+To delete a Code Similarity search from an extraction view, expand the **Extraction** node, right-click and select **Code Similarity** > **Execution History**. Right-click on a result and click on **Remove**.
 
 ![Delete from Extraction View](_media/tms-code-similarity-delete-extractionview.png)

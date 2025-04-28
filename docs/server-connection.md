@@ -4,11 +4,11 @@ The connection to an active server is mandatory to use the features of the Trans
 
 ## IBM i server connection
 
-> **Step 1:** To connect to your server, use the **IBM i** icon on the left side, then click on the **Connect to IBM i** button.
+**Step 1:** To connect to your server, use the **IBM i** icon on the left side, then click on the **Connect to IBM i** button.
 
 ![TMS Connect to ibm i](_media/tms-connect-ibmi.png)
 
-> **Step 2:** Set the connection parameters:
+**Step 2:** Set the connection parameters:
 
 **Connection Name** / **Host or IP Adress**  
 Enter the name, Host or IP address of the IBM i partition hosting the server.
@@ -17,9 +17,9 @@ Enter the name, Host or IP address of the IBM i partition hosting the server.
 Enter a valid user login and password. This user must be declared on the server and will be the user that will execute any operations on the IBM i.  
 Check the **Save password** if needed.
 
-> **Step 3:** You can either click on the **Connect** button to connect immediately, or the **Save & Exit** button to connect later.
+**Step 3:** You can either click on the **Connect** button to connect immediately, or the **Save & Exit** button to connect later.
 
-> **Result:** You are successfully connected to the server.
+**Result:** You are successfully connected to the server.
 
 The Transformer Microservices license is stored on the connected IBM i machine, so there is no need to add one within the extension.  
 You can find the details in the **Product License Status** section in the primary panel view.
