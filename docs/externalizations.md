@@ -69,7 +69,6 @@ Complete the following parameters.
 
 **Binding**
 - **Name**: assign a unique name to the binding object.
-![Binding Name](_media/tms-externalization-parameter-view.png)
 - **Type**: Choose the binding type (e.g., `PGM`, `SRVPGM`).
 - **Description**: Optionally, provide a description for the binding object.
 
@@ -88,8 +87,6 @@ Click **Finish** to launch the externalization execution process.
 > [!Warning] 
 > The externalization execution process starts by performing a new code extraction analysis based on the parameters used in the original code analysis.  
 > Once this analysis is successfully validated, the process proceeds to the second step: creating and applying the necessary modifications to the target ARCAD version.
-
-You can monitor this step by using the **Background job** view, which is automatically displayed in the *ARCAD Transformer Microservices* perspective.
 
 ---
 
