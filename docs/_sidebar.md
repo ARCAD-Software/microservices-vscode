@@ -1,5 +1,11 @@
 <!-- docs/_sidebar.md -->
 
+<div style="text-align: center;">
+
+![ARCAD Microservices Logo](https://www.arcadsoftware.com/arcad/wp-content/uploads/2024/06/logo-microservices.png)
+
+</div>
+
 * [About ARCAD Transformer Microservices](/)
 * Getting Started
     * [Installation](installation.md)

@@ -4,7 +4,7 @@
 
 Welcome to the **ARCAD Microservices Extension for VSCode** Documentation!
 
-![TMS Extension](_media/tms-extension.png)
+![Arcad Microserviecs Extension](_media/tms-extension.png)
 
 ARCAD Transformer Microservices is an integral tool in the process of modernizing legacy applications by honing in on specific sections of code that possess unique characteristics.
 
@@ -25,3 +25,19 @@ To achieve this goal, the product focuses on:
 - auditing the risk associated with externalizing a selected portion of code before centralizing it,
 - determining where a selected piece of code is used within an application, and
 - ensuring the uniqueness of the call to centralized code within the application.
+- automating the deployment of REST web services for IBM i ILE objects using IBM's Integrated Web Services Server (IWS),
+- providing comprehensive iUnit testing support on successful externalization to ensure code quality and reliability.
+
+---
+
+## ARCAD Transformer Microservices for REST Web Services
+
+**ARCAD Transformer Microservices** is designed to automate the deployment of REST web services for IBM i ILE objects (programs or service programs). Leveraging IBM's **Integrated Web Services Server (IWS)**, this tool simplifies the process of defining, managing, and deploying web services, enhancing productivity and minimizing manual intervention.
+
+### Key Capabilities:
+
+- **Automated REST Service Deployment** - Transform ILE objects into RESTful web services with minimal configuration
+- **Service Definition Management** - Easily define and manage web service endpoints
+- **IWS Integration** - Seamlessly integrate with IBM's Integrated Web Services Server
+- **Reduced Manual Effort** - Automate deployment processes to enhance developer productivity
+- **Enterprise-Ready** - Deploy production-grade web services with confidence
