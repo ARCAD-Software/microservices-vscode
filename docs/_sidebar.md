@@ -17,6 +17,7 @@
     * [Code Extraction](extractions.md)
         * [Launch a Code Analysis](analyze-code.md)
         * [Viewing Results](results.md)
+        * [Rename Extraction](rename-extraction.md)
         * [Externalization](externalizations.md)
     * [Code Similarity](codesimilarity.md)
         * [Code Similarity Overview](code-similarity-principles.md)

@@ -76,6 +76,25 @@ You can view:
 
 ---
 
+### Renaming an Extraction Analysis
+
+You can update the description of extraction analyses to provide meaningful context and track changes. This action is available for both successful and failed extractions.
+
+**Step 1:** From the **Extraction** or **Externalization** section in the **Rules** node, right-click on an extraction analysis.
+
+**Step 2:** Select the **Rename** option from the contextual menu.
+
+**Step 3:** Enter the new description for the extraction.
+
+![Rename Extraction](_media/tms-rename-extraction.png)
+
+Press **Enter** to confirm.
+
+> **Reference**  
+> For more information about renaming extraction descriptions, refer to the [Rename Extraction](rename-extraction.md) documentation.
+
+---
+
 ### Externalizing an Extraction Analysis
 
 From the **Extraction** section in the **Rules** node, any successful extraction from a version can be externalized into a new ILE procedure.
