@@ -25,6 +25,7 @@
     * [Web Services](webservices.md)
         * [Web Services Servers](web-servers.md)
         * [Deploy a Web Services](web-services.md)
+    * [Macro Commands](macro-commands.md)
     
 * Additional Ressources
     * <a href="ARCAD-Transformer-Microservices-Installation-Guide.pdf" target="_blank">Microservices Server Installation Guide</a>
