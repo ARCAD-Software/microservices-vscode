@@ -79,10 +79,16 @@ Once library lists are configured, the explorer displays:
 **Available Views:**
 - **All Macro Commands** - Complete list of all available macros (all will be visible to the user)
 - **Favorites** - Filtered view showing only macro commands marked as favorites
+  - **Version 1.0.3 Enhancement**: Now includes TMS-related macros and user-marked favorites
+  - **Quick Access**: Perfect for finding frequently used TMS macros without scrolling through all available macros
+  - **Library-Specific Filtering**: View macros from specific libraries (e.g., ARCAD_ENG) when needed
 
 ![Favourite Macro Commands](_media/tms-favourite-macro-commands.jpg)
 
-**Note:** Users can see all available macro commands in the **All Macro Commands** view. The **Favorites** view provides quick access to frequently used macros only.
+**User Tips:**
+- **For TMS Macros Only**: If you want to see only TMS-related macros, navigate to the **Favorites** view where all TMS macros are readily available
+- **For Complete List**: Use **All Macro Commands** view to access every available macro in your configured library lists
+- **Note:** Users can see all available macro commands in the **All Macro Commands** view. The **Favorites** view provides quick access to frequently used macros only.
 
 ---
 
@@ -90,17 +96,26 @@ Once library lists are configured, the explorer displays:
 
 To view the macro definition in JSON format:
 
+**Option 1: Using Context Menu**
+
 **Step 1** Locate the macro command in the MACRO COMMANDS Explorer.
 
 **Step 2** Right-click on the macro command.
 
 **Step 3** Select **Open Macro Definition** from the context menu.
 
-**Step 4** The macro definition displays in JSON format showing:
+**Option 2: Using Double-Click (Version 1.0.3+)**
+
+**Step 1** Locate the macro command in the MACRO COMMANDS Explorer.
+
+**Step 2** Double-click on the macro command.
+
+**Result** The macro definition displays in JSON format showing:
 - Macro ID
 - Name and description
 - Definition details
 - Parameters and configuration
+- All macro properties and settings
 
 ---
 
@@ -152,10 +167,75 @@ After executing a macro command, you can view detailed logs in the **ARCAD Macro
 
 ---
 
+### Macro Execution History (Version 1.0.3+)
+
+After executing macros, you can track execution history to monitor macro performance and results.
+
+**To View Macro Execution History:**
+
+**Step 1** Navigate to the **Application** node in your configuration.
+
+**Step 2** Locate the executed macro in the list.
+
+**Step 3** View the execution history indicator next to each macro:
+- **Successful Executions** - Indicated by checkmark or success icon
+- **Failed Executions** - Indicated by error icon
+- **Execution Count** - Shows number of times macro was executed
+- **Last Execution** - Timestamp of the most recent execution
+
+**Step 4** Click on execution history to view detailed results:
+- Execution date and time
+- Duration of execution
+- Output results
+- Any errors or warnings
+
+**Result** Complete execution history is accessible for audit and performance tracking purposes.
+
 ## Execution Results
 
 After executing a macro command, the explorer displays:
 
+---
+
+## Library Management at Application Level (Version 1.0.3+)
+
+Library lists at the Application level provide organization and access to macros across your entire application configuration. Common library names include `ARCAD_ENG` and other application-specific libraries.
+
+### Adding Library Lists at Application Level
+
+**Using the Plus Icon:**
+1. Navigate to the **Application** node in the MACRO COMMANDS explorer
+2. Click the **+ (Plus Icon)** in the toolbar
+3. Select **Add Library List**
+4. Enter library details:
+   - **Library Name** (e.g., `ARCAD_ENG`)
+   - **Library Path** 
+   - **Access Permissions**
+5. Click **Save**
+
+**Using the Context Menu:**
+1. Right-click on the **Application** node
+2. Select **Add Library List**
+3. Configure library details
+4. Click **Save**
+
+### Removing Library Lists at Application Level
+
+To remove a library list:
+
+**Using the Minus Icon:**
+1. Locate the library under the **Application** node
+2. Click the **- (Minus Icon)** next to the library
+3. Confirm removal
+
+**Using the Context Menu:**
+1. Right-click on the library list
+2. Select **Remove Library List**
+3. Confirm removal
+
+**Result** The library is removed from the system.
+
+---
 
 ## Library Management
 

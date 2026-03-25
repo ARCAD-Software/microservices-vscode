@@ -69,8 +69,22 @@ Complete the following parameters.
 
 **Binding**
 - **Name**: assign a unique name to the binding object.
-- **Type**: Choose the binding type (e.g., `PGM`, `SRVPGM`).
-- **Description**: Optionally, provide a description for the binding object.
+- **Type**: Choose the binding type:
+  - `PGM` - Program type binding
+  - `SRVPGM` - Service Program binding
+- **Service Program Selection** (Version 1.0.3+):
+  - For `SRVPGM` type bindings, you can now choose from:
+    - **Create New Service Program** - Generate a new SRVPGM
+    - **Use Existing Service Program** - Select from existing SRVPGM objects in your environment
+  - When selecting an existing Service Program, ensure it matches your externalization requirements
+- **Description**: Optionally, provide a description for the binding object
+
+> [!TIP]
+> **Service Program Selection Feature (V1.0.3)**  
+> The ability to select existing Service Programs (SRVPGM) provides greater flexibility in externalization workflows. You can now:
+> - Reuse existing service programs instead of creating duplicates
+> - Simplify binding management by leveraging current infrastructure
+> - Reduce code duplication and maintenance overhead
 
 > [!Warning] 
 > The options for **component types** and **source files** are populated automatically from your ARCAD application topology.  

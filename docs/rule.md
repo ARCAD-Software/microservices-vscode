@@ -14,6 +14,66 @@ To access this view, expand the **Rules** node under the **Projects** node locat
 
 ---
 
+## OSGI Configuration (Version 1.0.3+)
+
+OSGI (Open Service Gateway Initiative) configuration is essential for establishing proper connection management in ARCAD Transformer Microservices.
+
+### Configuring OSGI Entities
+
+**New Entity - Version 1.0.3:**
+- **Entity Name**: `Microservices.ccsid`
+- **Purpose**: Manages character set identifier settings for microservices connections
+- **Level**: Application level
+
+**To Configure OSGI Settings:**
+
+**Step 1** Navigate to the **Application** node in your rule configuration.
+
+**Step 2** Locate the OSGI configuration section.
+
+**Step 3** Add or modify the `Microservices.ccsid` entity with appropriate values for your environment.
+
+**Step 4** Save your configuration.
+
+**Result** Your OSGI settings are now applied at the Application level for all rules.
+
+---
+
+## License Management (Version 1.0.3+)
+
+ARCAD Transformer Microservices now provides comprehensive license management with support for both temporary and permanent licenses.
+
+### Viewing Available Licenses
+
+Users can view and manage two types of licenses:
+
+**Temporary Licenses**
+- Short-term licenses for evaluation or trial purposes
+- Indicated by temporary status in license details
+- Useful for testing new features or environments
+
+**Permanent Licenses**
+- Long-term production licenses
+- Appropriate for permanent deployments
+- Permanent status indicated in license details
+
+**To View License Information:**
+
+**Step 1** Access the **License Management** section from the main menu or settings.
+
+**Step 2** The system displays both:
+- **Active Temporary Licenses** (if available)
+- **Active Permanent Licenses** (if available)
+
+**Step 3** Review key information:
+- License type (`Temporary` or `Permanent`)
+- Expiration date (for temporary licenses)
+- Associated features and capabilities
+
+**Result** You have complete visibility into your licensing status and can plan accordingly.
+
+---
+
 ## Creating a New ARCAD Transformer Microservices Rule
 
 Follow the subsequent steps to create a new rule.
