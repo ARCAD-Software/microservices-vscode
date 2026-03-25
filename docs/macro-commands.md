@@ -56,7 +56,7 @@ The **MACRO COMMANDS Explorer** allows users to:
 
 **Step 1** Locate the library list you want to remove in the MACRO COMMANDS Explorer.
 
-**Step 2** Click the **- (Minus Icon)** in the explorer toolbar next to the library.
+**Step 2** Click the **- ( Icon)** in the explorer toolbar next to the library.
 
 **Step 3** Confirm the removal when prompted.
 
