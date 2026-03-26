@@ -2,34 +2,76 @@
 
 The connection to an active server is mandatory to use the features of the Transformer Microservices extension.
 
+**Complete Workflow:**
+1. Step 1: Configure Microservices settings
+2. Step 2: Enter IBM i server details & connect to machine
+3. Step 3: After successful connection → Add applications in Microservices Extension
+4. Step 4 (Optional): Configure port and security settings
+
 ---
 
-## Microservices Configuration
+## Step 1: Microservices Configuration
 
-Before connecting to your IBM i server, you should configure your Microservices settings and add the applications you will work with.
+Before connecting to your IBM i server, you should configure your basic Microservices settings.
 
 ### Microservices Initial Setup
 
-Once you install the ARCAD Transformer Microservices extension, you'll need to configure it before establishing the server connection.
+Once you install the ARCAD Transformer Microservices extension, you'll need to configure the initial settings.
 
 **Key Configuration Areas:**
-- Application selection
 - Server connection parameters
 - License management
 - Port and connection settings
 
 ![Microservices Configuration](_media/tms-connection-configuration.png)
 
+---
+
+## Step 2: IBM i Server Connection
+
+### Connecting to IBM i Machine
+
+Now enter your IBM i server details and establish the connection to the machine.
+
+**Step 2.1:** To connect to your server, use the **IBM i** icon on the left side, then click on the **Connect to IBM i** button.
+
+![TMS Connect to ibm i](_media/tms-connect-ibmi.png)
+
+**Step 2.2:** Set the connection parameters for your IBM i machine:
+
+**Connection Name / Host or IP Address**
+- Enter the name, Host or IP address of the IBM i partition hosting the server
+- Example: `192.168.1.100` or `ibmi.company.com`
+
+**Username / Password**
+- Enter a valid user login and password
+- This user must be declared on the server and will execute all operations on the IBM i
+- Check the **Save password** if needed
+
+**Step 2.3:** After entering your machine details, you can either:
+- Click the **Connect** button to connect immediately
+- Click the **Save & Exit** button to connect later
+
+**Result:** You are successfully connected to the IBM i server.
+
+The Transformer Microservices license is stored on the connected IBM i machine, so there is no need to add one within the extension.  
+You can find the details in the **Product License Status** section in the primary panel view.
+
+![TMS License](_media/tms-license.png)
+
+---
+
+## Step 3: After Successfully Connected - Add Applications
+
+Once you have successfully connected to the IBM i server, you can now add the applications you will work with in the Microservices Extension.
+
 ### Adding an Application
 
-Once the server is connected, you can open the Microservices extension to use its features.  
-Before you start, you need to set the application(s) you will work with.
-
-**Step 1:** Click on the **+** button in the **Application** section of the extension.
+**Step 4.1:** Click on the **+** button in the **Application** section of the extension.
 
 ![Add Application](_media/tms-application.png)
 
-**Step 2:** A dialog opens showing available applications. Select one or several applications by checking their corresponding boxes.
+**Step 4.2:** A dialog opens showing available applications. Select one or several applications by checking their corresponding boxes.
 
 ![Application List](_media/tms-application-list.png)
 
@@ -41,7 +83,7 @@ Before you start, you need to set the application(s) you will work with.
 - FGRGA - FGR - GitHub Actions Tests
 - FGRIMS - FGR Transformer microservices
 
-**Step 3:** Click **OK** to add the selected applications.
+**Step 4.3:** Click **OK** to add the selected applications.
 
 **Result:** Your applications are successfully added and appear in the **Application** section in the primary panel view of the **Transformer Microservices** extension.
 
@@ -51,41 +93,21 @@ Before you start, you need to set the application(s) you will work with.
 
 To remove an application from your workspace:
 
-**Step 1** Click the **— Remove Application** button.
+**Step 3.4** Click the **— Remove Application** button.
 
-**Step 2** Select the applications to remove from the drop-down list.
+**Step 3.5** Select the applications to remove from the drop-down list.
 
-**Step 3** Click **OK** to confirm the removal.
+**Step 3.6** Click **OK** to confirm the removal.
 
 **Result** The application(s) are removed from your workspace and will no longer appear in the Application section.
 
 ---
 
-## IBM i server connection
+## Step 4: Optional - Configure Port & Security Settings
 
-**Step 1:** To connect to your server, use the **IBM i** icon on the left side, then click on the **Connect to IBM i** button.
+You can optionally configure advanced port and security settings.
 
-![TMS Connect to ibm i](_media/tms-connect-ibmi.png)
-
-**Step 2:** Set the connection parameters:
-
-**Connection Name** / **Host or IP Adress**  
-Enter the name, Host or IP address of the IBM i partition hosting the server.
-
-**Username** / **Password**  
-Enter a valid user login and password. This user must be declared on the server and will be the user that will execute any operations on the IBM i.  
-Check the **Save password** if needed.
-
-**Step 3:** You can either click on the **Connect** button to connect immediately, or the **Save & Exit** button to connect later.
-
-**Result:** You are successfully connected to the server.
-
-The Transformer Microservices license is stored on the connected IBM i machine, so there is no need to add one within the extension.  
-You can find the details in the **Product License Status** section in the primary panel view.
-
-![TMS License](_media/tms-license.png)
-
-## Additional Configuration
+**Step 4.1:** Configure Port & Security Settings
 
 Click the ![Gear Icon](_media/icons/gear.svg) Gear icon, then click the **Settings** option. The VScode settings open in a new tab.  
 From the **Extensions** section, open the ARCAD-Transformer Microservices extension settings.
