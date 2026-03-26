@@ -2,6 +2,65 @@
 
 The connection to an active server is mandatory to use the features of the Transformer Microservices extension.
 
+---
+
+## Microservices Configuration
+
+Before connecting to your IBM i server, you should configure your Microservices settings and add the applications you will work with.
+
+### Microservices Initial Setup
+
+Once you install the ARCAD Transformer Microservices extension, you'll need to configure it before establishing the server connection.
+
+**Key Configuration Areas:**
+- Application selection
+- Server connection parameters
+- License management
+- Port and connection settings
+
+![Microservices Configuration](_media/tms-connection-configuration.png)
+
+### Adding an Application
+
+Once the server is connected, you can open the Microservices extension to use its features.  
+Before you start, you need to set the application(s) you will work with.
+
+**Step 1:** Click on the **+** button in the **Application** section of the extension.
+
+![Add Application](_media/tms-application.png)
+
+**Step 2:** A dialog opens showing available applications. Select one or several applications by checking their corresponding boxes.
+
+![Application List](_media/tms-application-list.png)
+
+**Available Applications** may include:
+- ARC_DEMO - Arcad demo applications
+- ARTEMIS - Test micro services
+- AZRCO - Arcad demo applications
+- FARIA1 - Application FARIA1
+- FGRGA - FGR - GitHub Actions Tests
+- FGRIMS - FGR Transformer microservices
+
+**Step 3:** Click **OK** to add the selected applications.
+
+**Result:** Your applications are successfully added and appear in the **Application** section in the primary panel view of the **Transformer Microservices** extension.
+
+![Added Applications](_media/tms-added-application.png)
+
+### Removing an Application
+
+To remove an application from your workspace:
+
+**Step 1** Click the **— Remove Application** button.
+
+**Step 2** Select the applications to remove from the drop-down list.
+
+**Step 3** Click **OK** to confirm the removal.
+
+**Result** The application(s) are removed from your workspace and will no longer appear in the Application section.
+
+---
+
 ## IBM i server connection
 
 **Step 1:** To connect to your server, use the **IBM i** icon on the left side, then click on the **Connect to IBM i** button.
@@ -25,25 +84,6 @@ The Transformer Microservices license is stored on the connected IBM i machine, 
 You can find the details in the **Product License Status** section in the primary panel view.
 
 ![TMS License](_media/tms-license.png)
-
-## Adding an Application
-
-Once the server is connected, you can open the Microservices extension to use its features.  
-Before you start, you need to set the application(s) you will work with.
-
-To do so, click on the **+** button in the Application section.
-
-![Add Application](_media/tms-application.png)
-
-Select one or several applications by checking their corresponding boxes. Click **OK** to add them.
-
-![Application List](_media/tms-application-list.png)
-
-Your applications are successfully added and appear in the **Application** section in the primary panel view of the **Transformer Microservices** extension.
-
-![Added Applications](_media/tms-added-application.png)
-
-To remove an application, click the **— Remove Application** button and select the applications to remove from the drop-down list. Click **OK** to confirm the removal.
 
 ## Additional Configuration
 
