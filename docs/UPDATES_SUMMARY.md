@@ -3,7 +3,7 @@
 ## Overview
 This document summarizes all documentation updates made to reflect Version 1.0.3 features for ARCAD Transformer Microservices.
 
-**Server Compatibility**: Version 1.0.3 is compatible with V26 Server and later releases.
+**Server Compatibility**: Version 1.0.3 is compatible with the v26.0 Server and later releases.
 
 ---
 
@@ -23,14 +23,15 @@ This document summarizes all documentation updates made to reflect Version 1.0.3
 
 ---
 
-### 2. **rule.md** (CONFIGURATION & LICENSE)
-✅ **Added**: Two Major Sections
-1. **OSGI Configuration (V1.0.3+)**
+### 2. **rule.md** (Configuration and License)
+Added two major configuration sections
+
+**OSGI Configuration (V1.0.3+)**
    - New entity: `Microservices.ccsid`
    - Application level configuration
    - Step-by-step configuration guide
 
-2. **License Management (V1.0.3+)**
+**License Management (V1.0.3+)**
    - Temporary License support
    - Permanent License support
    - Viewing and management instructions
@@ -39,7 +40,7 @@ This document summarizes all documentation updates made to reflect Version 1.0.3
 
 ---
 
-### 3. **externalizations.md** (SERVICE PROGRAM SELECTION)
+### 3. **externalizations.md** (Service Program Selection)
 ✅ **Enhanced**: Binding Configuration Section
 - Added Service Program Selection feature (V1.0.3+)
 - Options to create new or use existing SRVPGM

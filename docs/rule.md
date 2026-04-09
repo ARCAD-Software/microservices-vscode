@@ -12,32 +12,25 @@ To access this view, expand the **Rules** node under the **Projects** node locat
 
 ![Rule Node View](_media/tms-rule-viewnode.png)
 
----
-
 ## OSGI Configuration (Version 1.0.3+)
 
 OSGI (Open Service Gateway Initiative) configuration is essential for establishing proper connection management in ARCAD Transformer Microservices.
 
 ### Configuring OSGI Entities
 
-**New Entity - Version 1.0.3:**
-- **Entity Name**: `Microservices.ccsid`
-- **Purpose**: Manages character set identifier settings for microservices connections
-- **Level**: Application level
+| Entity Name | Purpose | Level|
+| --- | --- | --- |
+| `Microservices.ccsid` | Manages character set identifier settings for microservices connections | Application level |
 
-**To Configure OSGI Settings:**
+**To Configure the OSGI Settings:**
 
-**Step 1** Navigate to the **Application** node in your rule configuration.
+**Step 1** Navigate to the **Application** node in your rule configuration and locate the OSGI configuration section.
 
-**Step 2** Locate the OSGI configuration section.
+**Step 2** Add or modify the `Microservices.ccsid` entity with the appropriate values for your environment.
 
-**Step 3** Add or modify the `Microservices.ccsid` entity with appropriate values for your environment.
+**Step 3** Save your configuration.
 
-**Step 4** Save your configuration.
-
-**Result** Your OSGI settings are now applied at the Application level for all rules.
-
----
+**Result** Your OSGI settings are now applied at the **Application** level for all rules.
 
 ## License Management (Version 1.0.3+)
 
@@ -47,32 +40,20 @@ ARCAD Transformer Microservices now provides comprehensive license management wi
 
 Users can view and manage two types of licenses:
 
-**Temporary Licenses**
-- Short-term licenses for evaluation or trial purposes
-- Indicated by temporary status in license details
-- Useful for testing new features or environments
+| Temporary Licenses | Permanent Licenses |
+| ------- | -------- |
+| - Short-term licenses for evaluation or trial purposes <br /> - Indicated by temporary status in license details <br /> - Useful for testing new features or environments | - Long-term production licenses <br /> - Appropriate for permanent deployments <br /> - Permanent status indicated in license details |
 
-**Permanent Licenses**
-- Long-term production licenses
-- Appropriate for permanent deployments
-- Permanent status indicated in license details
-
-**To View License Information:**
-
-**Step 1** Access the **License Management** section from the main menu or settings.
-
-**Step 2** The system displays both:
+To View the License Information, open the **License Management** section from the Main menu or Settings.  
+The system displays both:
 - **Active Temporary Licenses** (if available)
 - **Active Permanent Licenses** (if available)
 
-**Step 3** Review key information:
-- License type (`Temporary` or `Permanent`)
-- Expiration date (for temporary licenses)
-- Associated features and capabilities
-
-**Result** You have complete visibility into your licensing status and can plan accordingly.
-
----
+> [!NOTE]
+> Review the key information:
+> - License type (`Temporary` or `Permanent`)
+> - Expiration date (for temporary licenses)
+> - Associated features and capabilities
 
 ## Creating a New ARCAD Transformer Microservices Rule
 
@@ -96,7 +77,6 @@ Press **Enter** to confirm.
 
 **Result** The new rule appears in the list under the **Rules** node.
 
----
 
 ## Moving an Existing ARCAD Transformer Microservices Rule
 
@@ -112,7 +92,6 @@ Follow the subsequent steps to move an existing rule to a different project.
 
 **Result** The rule is successfully moved and will now appear under the **Rules** node of the selected project.
 
----
 
 ## Working with an Extraction Analysis
 
@@ -134,7 +113,6 @@ You can view:
 ![Extraction Properties Menu](_media/tms-extraction-properties-menu.png)  
 ![Extraction Properties Dialog](_media/tms-extraction-properties.png)
 
----
 
 ### Renaming an Extraction Analysis
 
@@ -153,7 +131,6 @@ Press **Enter** to confirm.
 > **Reference**  
 > For more information about renaming extraction descriptions, refer to the [Rename Extraction](rename-extraction.md) documentation.
 
----
 
 ### Externalizing an Extraction Analysis
 
@@ -164,7 +141,6 @@ From the **Extraction** section in the **Rules** node, any successful extraction
 > **Reference**  
 > For more information about Externalization, refer to the [Externalization](externalisations.md) documentation.
 
----
 
 ### Launching a Code Similarity Search
 
@@ -176,7 +152,6 @@ To do so, right-click on the analysis and select the **Code Similarity > Search 
 > **Reference**  
 > For more information about Code Similarity, refer to the [Code Similarity](codesimilarity.md) documentation.
 
----
 
 ### Deleting an Extraction Analysis
 
@@ -187,7 +162,6 @@ To delete an extraction analysis, right-click on the extraction analysis to dele
 
 ![Delete Extraction Analysis](_media/tms-delete-extraction-ruleview.png)
 
----
 
 ## Deleting an ARCAD Transformer Microservices Rule
 

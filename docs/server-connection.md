@@ -2,11 +2,12 @@
 
 The connection to an active server is mandatory to use the features of the Transformer Microservices extension.
 
-**Complete Workflow:**
-1. Step 1: Configure Microservices settings
-2. Step 2: Enter IBM i server details & connect to machine
-3. Step 3: After successful connection → Add applications in Microservices Extension
-4. Step 4 (Optional): Configure port and security settings
+**Complete Workflow**
+
+**Step 1** Configure Microservices settings
+**Step 2** Enter IBM i server details and connect to machine
+**Step 3** After successful connection → Add applications in Microservices Extension
+**Step 4** [Optional] Configure port and security settings
 
 ---
 

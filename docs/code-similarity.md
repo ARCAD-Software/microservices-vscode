@@ -65,17 +65,16 @@ Follow the subsequent steps to launch a Code Similarity analysis from a componen
 > [!TIP]  
 > If set to 5, results are shown only when similar blocks are found in five or more components.
 
-- **Load Pseudocode** (Version 1.0.3+): Automatic pseudocode generation for similarity analysis
-  - **Enhanced Feature**: Pseudocode is now automatically generated when needed
-  - **Wide Scope Support**: Enables multiple code similarity executions with broader matching capabilities
-  - **Pre-Requirement**: Pseudo code must be generated before performing code similarity searches
-  - **Access**: The "Generate Pseudo Code" icon is available in the Code Similarity Tab at the top-right corner when you open your project
-  - **Benefit**: Provides enhanced analysis depth across multiple similarity executions
+Starting v1.0.3, pseudocode-based similarity analysis is possible. The pseudocode is automatically generated for similarity analysis, enabling multiple code similarity executions with broader matching capabilities.
+
+The **Generate Pseudo Code** option remains available in the **Code Similarity** tab if you want to trigger generation in advance.
+
+> [!Warning]
+> Make sure you have generated the Pseudocode before performing code similarity searches.
 
 > [!NOTE]
-> **Version 1.0.3 Improvement:**  
-> Previously, pseudocode generation was optional for each similarity match (yes/no choice).  
-> Now, pseudocode generation is automatically handled to streamline the analysis workflow and provide better results for multiple code similarity executions.
+> Starting v1.0.3, Pseudocode generation is no longer a manual option to select for each similarity match (yes/no choice). Pseudocode generation is now automatically handled to streamline the analysis workflow and provide consistent results for multiple code similarity executions.
+
 
 Press **Enter** to launch the analysis.
 

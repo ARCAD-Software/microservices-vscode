@@ -96,7 +96,7 @@ Once library lists are configured, the explorer displays:
 
 To view the macro definition in JSON format:
 
-**Option 1: Using Context Menu**
+**Option 1: Using the Context Menu**
 
 **Step 1** Locate the macro command in the MACRO COMMANDS Explorer.
 
@@ -169,27 +169,28 @@ After executing a macro command, you can view detailed logs in the **ARCAD Macro
 
 ### Macro Execution History (Version 1.0.3+)
 
-After executing macros, you can track execution history to monitor macro performance and results.
-
-**To View Macro Execution History:**
+After executing macros, you can track execution history to monitor macro performance and results. Follow the subsequent steps to View the Macro Execution History.
 
 **Step 1** Navigate to the **Application** node in your configuration.
 
 **Step 2** Locate the executed macro in the list.
 
-**Step 3** View the execution history indicator next to each macro:
-- **Successful Executions** - Indicated by checkmark or success icon
-- **Failed Executions** - Indicated by error icon
-- **Execution Count** - Shows number of times macro was executed
-- **Last Execution** - Timestamp of the most recent execution
+**Step 3** View the execution history indicator next to each macro.
 
-**Step 4** Click on execution history to view detailed results:
-- Execution date and time
-- Duration of execution
-- Output results
-- Any errors or warnings
+| Column | Description |
+| ---    | ----------  |
+| Successful Executions | Indicated by a checkmark or success icon. |
+| Failed Executions | Indicated by anerror icon. |
+| Execution Count | Shows the amount of times a macro was executed. |
+| Last Execution | Displays the timestamp of the most recent execution. |
 
-**Result** Complete execution history is accessible for audit and performance tracking purposes.
+**Step 4** Click on the execution history to view the detailed results. The following elements are displayed:
+- Execution date and time,
+- Duration of execution,
+- Output results, and
+- Any errors or warnings.
+
+**Result** The complete execution history is then available for audit and performance tracking purposes.
 
 ## Execution Results
 
@@ -203,74 +204,11 @@ Library lists at the Application level provide organization and access to macros
 
 ### Adding Library Lists at Application Level
 
-**Using the Plus Icon:**
-1. Navigate to the **Application** node in the MACRO COMMANDS explorer
-2. Click the **+ (Plus Icon)** in the toolbar
-3. Select **Add Library List**
-4. Enter library details:
-   - **Library Name** (e.g., `ARCAD_ENG`)
-   - **Library Path** 
-   - **Access Permissions**
-5. Click **Save**
-
-**Using the Context Menu:**
-1. Right-click on the **Application** node
-2. Select **Add Library List**
-3. Configure library details
-4. Click **Save**
+You can add a Library list either by using the **+ (Plus Icon)** in the Macro Commands explorer toolbar or through the Context menu. To do so, navigate to the **Application** node or right-click on it, then select the **Add Library List** option. Enter the Library details (the **Library Name** (for example, `ARCAD_ENG`), the **Library Path**, and the **Access Permissions**), and click **Save** to confirm.
 
 ### Removing Library Lists at Application Level
 
-To remove a library list:
-
-**Using the Minus Icon:**
-1. Locate the library under the **Application** node
-2. Click the **- (Minus Icon)** next to the library
-3. Confirm removal
-
-**Using the Context Menu:**
-1. Right-click on the library list
-2. Select **Remove Library List**
-3. Confirm removal
-
-**Result** The library is removed from the system.
-
----
-
-## Library Management
-
-### Adding Library Lists from Explorer
-
-A library list contains macros specific to that library. To add a new library:
-
-**Using the Plus Icon:**
-1. Click the **+ (Plus Icon)** in the MACRO COMMANDS explorer toolbar
-2. Select **Add Library List**=
-3. Click **Save**
-
-**Using the Context Menu:**
-1. Right-click on **MACRO COMMANDS** node
-2. Select **Add Library List**
-3. Configure library details
-4. Click **Save**
-
-### Removing Library Lists from Explorer
-
-To remove a library list:
-
-**Using the Minus Icon:**
-1. Locate the library in the explorer
-2. Click the **- (Minus Icon)** next to the library
-3. Confirm removal
-
-**Using the Context Menu:**
-1. Right-click on the library list
-2. Select **Remove Library List**
-3. Confirm removal
-
-**Result** The library is removed from the explorer and system.
-
----
+You can remove a Library list either by using the **- (Minus Icon)** or through the Context menu. To do so, locate the library under the **Application** node and click the **- (Minus Icon)** next to it, or right-click on the library list and select the **Remove Library List** option, then click OK to confirm. The library is then removed from the system.
 
 ## Best Practices
 

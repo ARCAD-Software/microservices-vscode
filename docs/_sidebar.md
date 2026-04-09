@@ -31,4 +31,4 @@
     * [Version History](version-history.md)
     
 * Additional Ressources
-    * <a href="ARCAD-Transformer-Microservices-Installation-Guide.pdf" target="_blank">Microservices Server Installation Guide</a>
+    * <a href="ARCAD-TMS_26.0_A4_Installation~Guide.pdf" target="_blank">Microservices Server Installation Guide</a>

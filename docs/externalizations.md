@@ -58,26 +58,35 @@ From the *Procedure Components* page, define the **Name**, **Type**, and **Sourc
 Complete the following parameters.
 
 **Component**
-- **Name**: provide a unique name for this component.
-- **Type**: select the appropriate component type from the available options (e.g., `RPGLE`).
-- **Source File**: choose the source file from the drop-down list, which will be populated based on your ARCAD application topology.
+
+|Parameter | Description |
+|--- | ---|
+| Name | Provide a unique name for this component. |
+| Type | Select the appropriate component type from the available options (e.g., `RPGLE`). |
+| Source File | Choose the source file from the drop-down list, which will be populated based on your ARCAD application topology.|
 
 **Prototype**
-- **Name**: specify a meaningful name for the prototype.
-- **Type**: typically, this is set as `Prototype`.
-- **Source File**: select the relevant source file for the prototype from the dropdown options.
+
+|Parameter | Description |
+|--- | ---|
+| Name | specify a meaningful name for the prototype. |
+| Type | typically, this is set as `Prototype`. |
+| Source File | select the relevant source file for the prototype from the dropdown options.|
 
 **Binding**
-- **Name**: assign a unique name to the binding object.
-- **Type**: Choose the binding type:
-  - `PGM` - Program type binding
-  - `SRVPGM` - Service Program binding
+
+|Parameter | Description |
+|--- | ---|
+| Name | Assign a unique name to the binding object. |
+| Type | Choose the binding type: <br /> - `PGM`: Program type binding <br /> - `SRVPGM`: Service Program binding |
+| Description  | Optionally, provide a description for the binding object. |
+
+> [!TIP]
 - **Service Program Selection** (Version 1.0.3+):
   - For `SRVPGM` type bindings, you can now choose from:
     - **Create New Service Program** - Generate a new SRVPGM
     - **Use Existing Service Program** - Select from existing SRVPGM objects in your environment
   - When selecting an existing Service Program, ensure it matches your externalization requirements
-- **Description**: Optionally, provide a description for the binding object
 
 > [!TIP]
 > **Service Program Selection Feature (V1.0.3)**  
@@ -95,7 +104,7 @@ Complete the following parameters.
 
 Click **Finish** to launch the externalization execution process.
 
-> **Note:** 
+> [!Note]
 > All configuration changes are automatically saved.
 
 > [!Warning] 

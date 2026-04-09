@@ -3,7 +3,7 @@
 ## Prerequisites
 
 To ensure that this extension functions properly, it is essential to install the ARCAD Transformer Microservices Server first.  
-To proceed with the installation, please refer to the corresponding <a href="ARCAD-Transformer-Microservices-Installation-Guide.pdf" target="_blank">Server Installation Guide</a>, which contains detailed instructions to help you install and set up the server.
+To proceed with the installation, please refer to the corresponding <a href="ARCAD-TMS_26.0_A4_Installation~Guide.pdf" target="_blank">Server Installation Guide</a>, which contains detailed instructions to help you install and set up the server.
 
 ## Download from the Marketplace
 
