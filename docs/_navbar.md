@@ -1,1 +1,4 @@
+- [Home](/)
+- [Version History](version-history.md)
+- [Marketplace](https://marketplace.visualstudio.com/items?itemName=arcadsoftware.arcad-microservices)
 - [Contact Us](https://www.arcadsoftware.com/about/contact/)
