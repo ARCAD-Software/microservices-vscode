@@ -12,7 +12,7 @@ Use the search bar in your VScode to look for the extension or open it from this
 
 ![TMS extension search](_media/tms-extension-search.png)
 
-Click **Install** to launch the installation of the extension. Once it is istalled, the Microservices extension appears in your toolbar.
+Click **Install** to launch the installation of the extension. Once it is installed, the Microservices extension appears in your toolbar.
 
 ![TMS Extension install](_media/tms-marketplace-extension.png)
 
@@ -28,5 +28,5 @@ These two extensions are:
 Once the extension is successfully installed, you have to set up the connection to the server.  
 For more information, refer to the [Server Connection Configuration](/server-connection.md) documentation.
 > [!WARNING]
-> If you uninstall the **Transformer Microservices** extension from VSCode, these two dependencies are not automatically unistalled.  
-However, if you try to unistall one of the dependencies, it automatically uninstalls the **Transformer Microservices** extension from VSCode.
+> If you uninstall the **Transformer Microservices** extension from VSCode, these two dependencies are not automatically uninstalled.  
+However, if you try to uninstall one of the dependencies, it automatically uninstalls the **Transformer Microservices** extension from VSCode.

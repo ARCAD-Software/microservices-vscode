@@ -100,3 +100,4 @@ The extraction analysis includes a simulated procedure to help validate the resu
 This simulation allows you to compare the code before and after extraction, with a detailed view of how the structure is modified and how parameters are passed to the new procedure. It also highlights variable scope to demonstrate how data remains accessible in both contexts.
 
 By providing this preview, the simulation helps ensure functional consistency and lets you confirm that the extraction behaves as expected before applying the changes.
+

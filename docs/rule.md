@@ -139,7 +139,7 @@ From the **Extraction** section in the **Rules** node, any successful extraction
 ![Externalization View](_media/tms-externalization-view.png)
 
 > **Reference**  
-> For more information about Externalization, refer to the [Externalization](externalisations.md) documentation.
+> For more information about Externalization, refer to the [Externalization](externalizations.md) documentation.
 
 
 ### Launching a Code Similarity Search

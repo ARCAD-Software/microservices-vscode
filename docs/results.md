@@ -5,27 +5,48 @@ To do so, right-click on the extraction and select **Show Extraction Results** i
 
 ![View Results](_media/tms-view-result.png)
 
-## Usage
+> [!TIP]
+> **Lower-Panel Tabs (Version 1.0.4+)**  
+> Extraction results are no longer displayed inside a sidebar tree (the previous **Extraction Analysis Explorer**). They now open as a row of Microservices tabs in the VS Code lower panel, next to **Output**, **Debug Console**, **Terminal**, and **Ports**: **Microservices - Parameter Fields**, **Microservices - Local Fields**, **Microservices - Code to be Extracted**, **Microservices - File to Extract**, and **Microservices - Program Calls**. Each tab keeps a list on the left and its **Usages** detail (and, where relevant, **I/O Runtime Paths**) on the right — the same information as before, now presented as flat, filterable tables instead of nested tree nodes.
 
-Clicking on any **Extraction Analysis Explorer** component opens to its dedicated **Usage** page. 
+## Microservices - Parameter Fields
 
-![Extraction Analysis Explorer](_media/tms-extraction-analysis-explorer.png)
+Lists the parameters required for the extracted procedure (**Name**, **Type**, **Mode**, **Used in call**, **Description**), with a filter box and a **Show all usages** shortcut.
 
-Each element in the **Usage** view is color-coded and highlighted based on its type.  
-When hovered over, a tooltip appears, providing contextual information for better guidance.
+Selecting a parameter, or clicking **Show all usages**, populates the **Usages** panel on the right with **Status**, **Line**, **Usage**, and **No. of Runtime Paths**. Where a field is used along more than one execution path, the **I/O Runtime Paths** table underneath lists each **Path ID**, **Line**, **Instruction**, **Status**, and **Usage** — the information ARCAD Transformer Microservices uses to determine whether a parameter should act as Input, Output, or Input/Output in the extracted procedure.
 
-![Usage](_media/tms-usage.png)
+![Parameter Fields tab](_media/tms-results-parameter-fields.png)
 
-## Microservices I/O Runtime Path
+## Microservices - Local Fields
 
-The **Microservices I/O Runtime Path** view is an extension of the **Usage** section, designed to provide a detailed presentation of the results.
+Lists the local variables that remain within the extracted code (**Name**, **Type**, **Description**). The **Usages** panel is empty until a variable is selected.
 
-![Open IO runtime](_media/tms-io-runtime.png)
+![Local Fields tab - no selection](_media/tms-results-local-fields-empty.png)
 
-To display the information in the **Microservices I/O Runtime Path** view, right-click on a successful extraction and select **Show Extraction results**.
-Unfold the **Extraction Analysis Explorer** section, spot the changes with a red icon, and click on the ![change](_media/icons/changed.svg) icon.
+Selecting a variable shows its usages (**Status**, **Line**, **Usage**, **No. of Runtime Paths**), the same detail level previously available by expanding the variable node in the tree.
 
-![Open IO runtime](_media/tms-open-io-runtime.png)
+![Local Fields tab - variable selected](_media/tms-results-local-fields-selected.png)
+
+## Microservices - Code to be Extracted
+
+Shows the Code Fragments involved in the extraction as a compact tree (**Parts of code to be Extracted** → subroutine/section → fragment), with its **Partial**/**Complete** status and a description giving the line range and the number of calls not extracted.
+
+![Code to be Extracted tab](_media/tms-results-code-to-be-extracted.png)
+
+## Microservices - File to Extract
+
+Lists the additional source files involved in the extraction, when the analysis needs code from files other than the source being analyzed. **No data available to display** is shown when the extraction does not require any additional file.
+
+![File to Extract tab](_media/tms-results-file-to-extract.png)
+
+## Microservices - Program Calls
+
+Lists external program/procedure calls and dependencies referenced by the code being extracted (equivalent to the previous External Call view). **No data available to display** is shown when the extraction has no external calls.
+
+![Program Calls tab](_media/tms-results-program-calls.png)
+
+> [!NOTE]
+> The **Problems** view is unaffected by this change: analysis errors continue to be listed in the lower panel's **Problems** tab (see [Viewing errors](#viewing-errors) below). The underlying information is unchanged — only its presentation moved from a sidebar tree to lower-panel tabs, making the parameter, local field, code, file, and call details easier to view side by side.
 
 ## Procedure and Prototype
 
@@ -35,7 +56,7 @@ To open the declared procedure prototype,  right-click on a successful extractio
 
 ![Procedure](_media/tms-procedure.png)
 
-To open the declared procedure prototype,  right-click on a successful extraction and select **Show Extraction results**. Click the ![More](_media/icons/more.svg) More icon, then select the **Show Prorotype Preview** option.
+To open the declared procedure prototype,  right-click on a successful extraction and select **Show Extraction results**. Click the ![More](_media/icons/more.svg) More icon, then select the **Show Prototype Preview** option.
 
 ![Prototype](_media/tms-prototype.png)
 

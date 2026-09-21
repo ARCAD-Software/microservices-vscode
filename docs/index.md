@@ -13,7 +13,7 @@
 </div>
 
 > [!TIP]
-> **Version 1.0.3** is out now, compatible with **V26 Server** and later. See the [Version History](version-history.md) for the full list of changes.
+> **Version 1.0.4** is out now, compatible with **V26 Server** and later. See the [Version History](version-history.md) for the full list of changes.
 
 ## What is ARCAD Transformer Microservices?
 

@@ -120,6 +120,62 @@ When editing the parameters, you can customize the following:
 - **Order:** Click the *Up* or *Down* icons to adjust the position of a parameter.
 - **Name and Keyword:** Click the *Edit* icon to open the editor, then define a new name and select a new keyword.
 
+### Parameter Naming Configuration (Version 1.0.4+)
+
+When externalizing a code block from a legacy RPG program, parameter names were previously derived directly from the original host field names as-is. Since legacy programs mix several naming styles — short uppercase fields (`CUSNO`), underscore names (`WRK_AMT`), special characters (`$TOTAL`), mixed case (`wrkAmt`) — this produced a differently styled procedure interface for every extraction.
+
+A project-level **naming template** now lets you standardize generated parameter names automatically:
+
+| Setting | Description |
+|---|---|
+| **Prefix Name** | Literal prefix prepended to every generated parameter name (e.g. `p_`) |
+| **Suffix Name** | Literal suffix appended to every generated parameter name (e.g. `_in`) |
+| **Case Format** | Case convention applied to the base name: `camelCase`, `PascalCase`, `UPPERCASE`, `lowercase`, `snake_case`, `UPPER_SNAKE_CASE` |
+
+Each generated name is built as `<prefix> + <base name converted to the selected case format> + <suffix>`. The base name is tokenized from the original field name — underscores, case transitions, and the RPG special characters `$ # @` are treated as token boundaries — before the case rule is applied.
+
+> **Example** (prefix `p_`, camelCase): `WRK_AMT` → `p_wrkAmt`
+
+> [!NOTE]
+> If no template is defined on the project, the previous behavior applies unchanged: the name is derived directly from the original field. Once a template is configured, consecutive underscores (`_`, `__`, etc.) are no longer allowed in a parameter name; without a template, consecutive underscores remain permitted.
+
+#### Configuring the Naming Template
+
+**Step 1** In the TMS Projects tree view, right-click the target project and select **Configure Parameter Naming** from the context menu.
+
+![Project context menu - Configure Parameter Naming](_media/tms-param-naming-context-menu.png)
+
+**Step 2** In the **Configure Parameter Naming** panel, enter a **Prefix Name** and/or a **Suffix Name** (at least one of the two is required) and choose a **Case Format** from the dropdown.
+
+![Parameter Naming panel](_media/tms-param-naming-panel.png)
+
+![Case Format options](_media/tms-param-naming-case-format-options.png)
+
+**Step 3** Click **Save**.
+
+**Result** A success or error notification is displayed in the VSCode notification area (bottom-right) confirming whether the template was saved. The template applies to all extractions performed under that project.
+
+#### Validating Parameter Names During Externalization
+
+Once a naming template is configured at project level, three extra actions appear next to each parameter in the **Manage Externalization Parameters** dialog:
+
+- **Validate** — applies the naming convention to the selected parameter only.
+- **Validate All** — applies the naming convention to every parameter in the list.
+- **Default** — reverts the parameter name back to the original, pre-template value.
+
+Suggested names can also be edited manually in-line; the field updates dynamically as you type.
+
+![Before validation](_media/tms-param-naming-before-validate.png)
+
+![After validation](_media/tms-param-naming-after-validate.png)
+
+**Result** The generated ILE procedure interface reflects the validated/corrected parameter names.
+
+![Resulting procedure interface with standardized parameter names](_media/tms-param-naming-result-interface.png)
+
+> [!NOTE]
+> This applies to both simulated and externalized procedures — violations are visible in the simulation preview before any code transformation is committed. Generated names remain valid RPG identifiers; length limits and name collisions after normalization are validated.
+
 > [!Warning]
 > The keyword drop-down list includes only the keywords managed by the externalization process:  
 > - `RETURN`: The return value is treated as a reference-type parameter.  
@@ -185,3 +241,68 @@ To delete it, delete the corresponding extraction analysis.
 > [!Warning]   
 > Deleting an externalization result does **not** undo changes made to original/generated components.  
 > You must **manually remove** those changes.
+
+
+---
+
+## Creating an iUnit Test Case (Version 1.0.4+)
+
+You can now create and run an **iUnit** test case directly from a successful externalization, without leaving VSCode. The test case can be created, populated with expected results, executed, and reviewed entirely from within the TMS and iUnit extensions.
+
+> [!NOTE]
+> **Prerequisites**  
+> - Install (or update to) the latest **ARCAD-Transformer Microservices** and **ARCAD-iUnit** extensions in VSCode. Open [ARCAD-iUnit](https://marketplace.visualstudio.com/items?itemName=arcadsoftware.arcad-iunit) from the Marketplace if it isn't installed yet.
+> - Set up the connection on both the Transformer Microservices and iUnit extensions (application/environment/version).
+> - Load the target repository in iUnit.
+> - Have a successful externalization available (a rule with an **Externalization → Success** result).
+
+### Step 1 - Create a Test Case
+
+In the **Rules** node, navigate to **Rules > (rule) > Externalization > Success**, then right-click one of the successful externalization entries. Under **Actions**, expand **iUnit** and select **Create Test Case** (the same menu offers **Show Test Cases** for entries that already have one).
+
+![Right-click on a successful externalization - Actions menu](_media/tms-iunit-rightclick-actions-menu.png)
+
+![iUnit submenu - Create Test Case / Show Test Cases](_media/tms-iunit-submenu.png)
+
+If more than one repository is linked to the application/environment/version, a picker prompts for which repository the test case should be created in.
+
+![Select Repository picker](_media/tms-iunit-select-repository.png)
+
+A default test case name is proposed, built from the object and procedure names plus a timestamp. It can be edited before confirming with **Enter**.
+
+![Test Case Name - default name proposed](_media/tms-iunit-test-case-name.png)
+
+**Result** A notification confirms the test case was created and offers to open the iUnit Explorer directly.
+
+![Confirmation notification - Open iUnit Explorer](_media/tms-iunit-confirmation-notification.png)
+
+### Step 2 - Show Test Cases
+
+Selecting **Show Test Cases** (or **Open iUnit Explorer** from the notification) opens a **Test Cases** view listing every test case defined for that object across all repositories, with its repository, application, environment, version, test case name, object name/type, linked procedure name, last execution date, and result count.
+
+![Test Cases view](_media/tms-iunit-test-cases-view.png)
+
+### Step 3 - Create Expected Result
+
+Right-click a test case row to access **Create Expected Result**, **Execute**, **Show Results**, and **Delete**.
+
+![Test case row context menu](_media/tms-iunit-test-case-context-menu.png)
+
+**Create Expected Result** opens an editable grid with one row per procedure parameter (name, data type). For each parameter, set the **Input Method** and **Input Value** to use for the run, then the **Operator** and, where applicable, the **Expected Value** / **Output Method** the actual result must satisfy. Confirm with **Create Mode** to save the expected result.
+
+![Create Expected Result grid](_media/tms-iunit-create-expected-result.png)
+
+### Step 4 - Execute
+
+Selecting **Execute** from the test case context menu runs the linked procedure with the configured input values and compares the actual output against the expected result. The **Test Execution Result** view lists each parameter with its type, input, expected value, operator, and actual value, with a check mark where the comparison passes.
+
+![Test Execution Result](_media/tms-iunit-execution-result.png)
+
+### Step 5 - Show Results
+
+**Show Results** (from the test case context menu) opens the full result view: a **Result Identification** panel (test case name, procedure name) and an **Execution History** list of past runs by date/time on the left, with the corresponding parameter comparison table on the right for the selected run.
+
+![Show Results view](_media/tms-iunit-show-results.png)
+
+> [!TIP]
+> End-to-end, this lets you go from a successful externalization to a validated, repeatable iUnit test in one continuous flow: **Create Test Case → Show Test Cases → Create Expected Result → Execute → Show Results**.

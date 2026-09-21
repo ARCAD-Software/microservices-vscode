@@ -1,11 +1,30 @@
-# Documentation Updates Summary - Version 1.0.3
+# Documentation Updates Summary
 
 ## Overview
-This document summarizes all documentation updates made to reflect Version 1.0.3 features for ARCAD Transformer Microservices.
+This document summarizes all documentation updates made to reflect Version 1.0.3 and Version 1.0.4 features for ARCAD Transformer Microservices.
 
-**Server Compatibility**: Version 1.0.3 is compatible with the v26.0 Server and later releases.
+**Server Compatibility**: Version 1.0.4 is compatible with the v26.0 Server and later releases.
 
 ---
+
+## Version 1.0.4 Updates
+
+### 1. **index.md**
+✅ Updated the version banner to reference **Version 1.0.4**
+
+### 2. **version-history.md**
+✅ **Added**: `## Version 1.0.4` section (Overview, What's New, Key Changes, What's Improved, Documentation References) sourced from the ARCAD feature-spec documents (Github Documentation folder), placed above the 1.0.3 section
+
+### 3. **results.md**
+✅ **Rewritten**: Replaced the tree-based "Extraction Analysis Explorer" description (Usage / Microservices I/O Runtime Path) with the real Version 1.0.4 behavior: 5 lower-panel tabs (Parameter Fields, Local Fields, Code to be Extracted, File to Extract, Program Calls), each with a real screenshot. "Procedure and Prototype" and "Viewing errors" sections kept as-is (unaffected by this change).
+
+### 4. **externalizations.md**
+✅ **Enhanced**: Editing Parameters section
+- Added full **Parameter Naming Configuration** feature section (project-level Prefix/Suffix/Case Format template, Validate/Validate All/Default actions, with real screenshots and the WRK_AMT → p_wrkAmt example)
+- Added full **Creating an iUnit Test Case** section at the end of the page (Create Test Case → Show Test Cases → Create Expected Result → Execute → Show Results, with real screenshots and prerequisites)
+
+### 5. **extractions.md**
+ℹ️ No changes needed — an earlier speculative edit (panel-based layout note, test case section) was reverted after the real source documents showed those changes belong to results.md and externalizations.md instead.
 
 ## Files Updated
 

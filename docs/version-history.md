@@ -1,23 +1,3 @@
-<!--## Ready for Future Versions
-
-When Version 1.0.4 is released, it will be added as a new top-level section:
-
-```
-## Version 1.0.4 (Upcoming Release)
-
-### Overview
-[Version 1.0.4 features and updates]
-
-### Feature Categories
-[New features for 1.0.4]
-
-### Summary of User-Facing Changes
-[What's new and improved in 1.0.4]
-
-### Documentation References
-[Links to updated documentation]
-```
--->
 ---
 
 # Version History - ARCAD Transformer Microservices
@@ -26,11 +6,63 @@ This page provides an overview of the main features and improvements introduced 
 
 > [!NOTE]
 > **Compatibility**  
-> Version 1.0.3 is compatible with V26 Server and later releases.
+> Version 1.0.4 is compatible with V26 Server and later releases.
 
 ---
 
-## Version 1.0.3 (Current Release)
+## Version 1.0.4
+
+### Overview
+
+Version 1.0.4 reworks how extraction results are viewed, introduces project-level parameter naming standardization for externalization, and adds the ability to create and run iUnit test cases directly from a successful externalization.
+
+---
+
+### What’s New
+
+- Extraction results now open as lower-panel tabs instead of a sidebar tree
+- Project-level Parameter Naming Configuration for externalization (prefix, suffix, case format)
+- iUnit test case creation, execution, and review directly from a successful externalization
+
+---
+
+### Key Changes
+
+#### Viewing Results
+
+##### Lower-Panel Tabs (New)
+Extraction results are no longer shown inside the **Extraction Analysis Explorer** tree in the sidebar. Selecting **Show Extraction Results** now opens a row of Microservices tabs in the VSCode lower panel — **Parameter Fields**, **Local Fields**, **Code to be Extracted**, **File to Extract**, and **Program Calls** — next to Output, Debug Console, Terminal, and Ports. Each tab keeps a list on the left and its Usages (and, where relevant, I/O Runtime Paths) on the right. The underlying information is unchanged; only its presentation moved, making details easier to view side by side. The Problems view is unaffected.
+
+#### Externalization
+
+##### Parameter Naming Configuration (New)
+A project-level naming template can now be configured for parameters generated during externalization: a **Prefix Name**, a **Suffix Name**, and a **Case Format** (camelCase, PascalCase, UPPERCASE, lowercase, snake_case, UPPER_SNAKE_CASE). When a template is configured, the **Manage Externalization Parameters** dialog gains **Validate**, **Validate All**, and **Default** actions to apply, bulk-apply, or revert the naming convention on generated parameter names. Without a configured template, behavior is unchanged.
+
+#### Testing
+
+##### iUnit Test Case Creation (New)
+You can now create an iUnit test case directly from a successful externalization via **Actions > iUnit > Create Test Case** on the Rules node, then define its expected results, execute it, and review results and execution history — all without leaving VSCode. Requires the ARCAD-iUnit extension.
+
+---
+
+### What’s Improved
+
+- Side-by-side visibility of parameter, local field, code, file, and call details when reviewing extraction results
+- Consistency of parameter naming across externalized procedures
+- Test coverage for externalized procedures, with results tracked over time
+
+---
+
+### Documentation References
+
+For detailed information, refer to:
+
+- [Viewing Results](results.md)
+- [Externalization](externalizations.md)
+
+---
+
+## Version 1.0.3
 
 ### Overview
 
@@ -38,7 +70,7 @@ Version 1.0.3 introduces improvements across code analysis, extraction workflows
 
 ---
 
-## What’s New
+### What’s New
 
 - OSGI configuration with the `Microservices.ccsid` entity  
 - Dual license management (temporary and permanent)  
@@ -53,7 +85,7 @@ Version 1.0.3 introduces improvements across code analysis, extraction workflows
 
 ---
 
-## Key Changes
+### Key Changes
 
 ### Connection and Configuration
 
@@ -123,7 +155,7 @@ Externalization now offers more flexible binding configuration options, simplify
 
 ---
 
-## What’s Improved
+### What’s Improved
 
 - Code similarity analysis consistency  
 - Extraction analysis readability and validation  
@@ -132,7 +164,7 @@ Externalization now offers more flexible binding configuration options, simplify
 
 ---
 
-## Documentation References
+### Documentation References
 
 For detailed information, refer to:
 
