@@ -26,6 +26,14 @@ This document summarizes all documentation updates made to reflect Version 1.0.3
 ### 5. **extractions.md**
 ℹ️ No changes needed — an earlier speculative edit (panel-based layout note, test case section) was reverted after the real source documents showed those changes belong to results.md and externalizations.md instead.
 
+### 6. **application-setup.md** (NEW PAGE)
+✅ **Created**, sourced from `TMS Doc\Doc\TMS_Application_Component_Environment_Version.docx`: Creating an Application, Creating a Component, Creating an Environment, Opening a Version — each with parameter tables, step-by-step instructions and real screenshots. Linked from `_sidebar.md` under Getting Started.
+
+### 7. **web-servers.md**
+✅ **Enhanced**: Creating a New Web Server section
+- Added the full parameter table for the Create Web Server panel
+- Added SSL/TLS configuration (Enable SSL/TLS, HTTPS Secure Port, Disable non-SSL port, IBMi User Profile), with real screenshots and the IWS/HTTPAdmin prerequisite warning
+
 ## Files Updated
 
 ### 1. **index.md** (MAIN REFERENCE)

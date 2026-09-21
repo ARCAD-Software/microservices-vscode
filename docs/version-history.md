@@ -14,7 +14,7 @@ This page provides an overview of the main features and improvements introduced 
 
 ### Overview
 
-Version 1.0.4 reworks how extraction results are viewed, introduces project-level parameter naming standardization for externalization, and adds the ability to create and run iUnit test cases directly from a successful externalization.
+Version 1.0.4 reworks how extraction results are viewed, introduces project-level parameter naming standardization for externalization, adds the ability to create and run iUnit test cases directly from a successful externalization, and adds a guided Application / Component / Environment / Version / Web Server setup workflow directly from the TMS explorer. This release also brings general UI and stability improvements.
 
 ---
 
@@ -23,6 +23,8 @@ Version 1.0.4 reworks how extraction results are viewed, introduces project-leve
 - Extraction results now open as lower-panel tabs instead of a sidebar tree
 - Project-level Parameter Naming Configuration for externalization (prefix, suffix, case format)
 - iUnit test case creation, execution, and review directly from a successful externalization
+- Guided setup for Application, Component, Environment, and Version creation from the TMS explorer
+- Web Server creation now supports SSL/TLS configuration
 
 ---
 
@@ -43,6 +45,19 @@ A project-level naming template can now be configured for parameters generated d
 ##### iUnit Test Case Creation (New)
 You can now create an iUnit test case directly from a successful externalization via **Actions > iUnit > Create Test Case** on the Rules node, then define its expected results, execute it, and review results and execution history — all without leaving VSCode. Requires the ARCAD-iUnit extension.
 
+#### Project Setup
+
+##### Application, Component, Environment & Version Creation (New)
+A guided setup workflow is now available directly from the TMS explorer: declare a new application, add components to it through a multi-step wizard, create an environment, and open a version — without leaving VSCode.
+
+##### Web Server SSL/TLS (New)
+Web server creation now includes an **Enable SSL/TLS** option with a dedicated HTTPS secure port, so secure web servers can be configured directly from the Create Web Server wizard (TLS itself must still be configured on the IBM i side in IBM Web Administration for i).
+
+#### General
+
+##### UI and Stability Improvements
+General user interface refinements and stability improvements across the extension, along with performance improvements to native components.
+
 ---
 
 ### What’s Improved
@@ -50,6 +65,8 @@ You can now create an iUnit test case directly from a successful externalization
 - Side-by-side visibility of parameter, local field, code, file, and call details when reviewing extraction results
 - Consistency of parameter naming across externalized procedures
 - Test coverage for externalized procedures, with results tracked over time
+- Overall UI consistency and stability
+- Performance of native components
 
 ---
 
@@ -59,6 +76,8 @@ For detailed information, refer to:
 
 - [Viewing Results](results.md)
 - [Externalization](externalizations.md)
+- [Application Setup](application-setup.md)
+- [Web Services Servers](web-servers.md)
 
 ---
 

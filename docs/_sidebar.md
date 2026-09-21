@@ -11,6 +11,7 @@
 * <span class="sidebar-group">Getting Started</span>
     * [<span class="sidebar-icon">⬇️</span> Installation](installation.md)
     * [<span class="sidebar-icon">🔌</span> Server Connection](server-connection.md)
+    * [<span class="sidebar-icon">🏗️</span> Application Setup](application-setup.md)
 
 * <span class="sidebar-group">Features</span>
     * [<span class="sidebar-icon">📐</span> Rules](rule.md)

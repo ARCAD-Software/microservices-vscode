@@ -39,7 +39,46 @@ Follow the subsequent steps to create a new web server.
 
 ![Create web server panel](_media/tms-webserver-add-panel.png)
 
+The **Create a Web Server** panel accepts the following parameters:
+
+| Parameter | Description |
+|---|---|
+| Server Name | Mandatory, unique, maximum length 10 characters, must contain at least one alpha character, cannot contain a blank, and cannot contain the special characters `& ! @ % * : / \\ # ; ? , = ^ < > \| + ' " ( ) { } [ ] -`. |
+| Server Description | Optional free-text label. |
+| Installation Directory | Must be an existing IFS directory; can be browsed and copied from the IFS Browser (**View > IBM i IFS Browser**). |
+| Starting Port | Must be between 1 and 65535. |
+
+![Create a Web Server panel - Server Name, Description, Installation Directory and Starting Port](_media/tms-webserver-ssl-basic-fields.png)
+
+#### Enabling SSL/TLS (Version 1.0.4+)
+
+Scroll down to enable secure HTTPS access for the web server:
+
+| Parameter | Description |
+|---|---|
+| Enable SSL/TLS | Marks the server for secure HTTPS access and activates the **HTTPS Secure Port** field. |
+| HTTPS Secure Port | Must be between 1 and 65535; only meaningful once **Enable SSL/TLS** is checked. |
+| Disable non-SSL port after TLS configuration | Once TLS is configured, disables plain HTTP access on the non-secure port. |
+| IBMi User Profile | An IBM i user profile with `*ALLOBJ` and `*IOSYSCFG` special authority is required. |
+
+![Create a Web Server panel - Enable SSL/TLS, HTTPS Secure Port, IBMi User Profile and Save button](_media/tms-webserver-ssl-fields.png)
+
+> **Example**  
+> Server Description = `TEST`, Installation Directory = `/arcad`, Starting Port = `12344`, Enable SSL/TLS checked, HTTPS Secure Port = `34567`, IBMi User Profile = `AKUMAR`.
+
+![Create a Web Server panel - completed lower section](_media/tms-webserver-ssl-lower-filled.png)
+
+![Create a Web Server panel - completed upper section, Server Name TESTSRV1](_media/tms-webserver-ssl-upper-filled.png)
+
+> [!WARNING]
+> **Prerequisite - Configure TLS on IWS**  
+> Checking **Enable SSL/TLS** and setting an **HTTPS Secure Port** in the Create Web Server form only records the intent and reserves the secure port on the web server object — it does **not** by itself activate TLS. TLS must be configured on the IBM i side first, in **IBM Web Administration for i** (HTTPAdmin / IWS), before it can be relied on here.
+
 **Step 3** Click **Save** to complete the creation of the Web Service.
+
+**Result** A confirmation notification is displayed in the VSCode notification area. If SSL/TLS was enabled, the notification reminds you that TLS must still be configured in IBM Web Administration for i.
+
+![Notification - web server created, reminder to configure TLS](_media/tms-webserver-ssl-notification.png)
 
 > [!NOTE]  
 > Once the web server is created, a corresponding entity is added in ARCAD Transformer Microservices, which becomes the primary interface for further interactions.
