@@ -1,4 +1,3 @@
-
 # Code Similarity Overview
 
 The Code Similarity search in ARCAD Transformer Microservices involves finding and comparing pieces of code to identify similarities. This process starts by extracting pseudocode from a source, then searching the repository to locate other instances of similar code.
@@ -28,7 +27,7 @@ This conversion follows specific rules to ensure consistency in the code.
 This feature, part of the ARCAD Transformer Microservices product, enables the analysis of *RPGLE* and *SQLRPGLE* source code to generate pseudocode representations of the analyzed sources.  
 Pseudocode can be generated in two ways:
 
-- At the **application** repository level, which creates pseudocode for all relevant sources within the repository.
+- At the **application repository** level, which creates pseudocode for all relevant sources within the repository.
 - At the **version** level, which generates pseudocode for sources within a specific version.
 
 > [!Warning] 

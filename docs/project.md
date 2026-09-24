@@ -9,9 +9,7 @@ To view your projects, simply expand the **Projects** node.
 
 ![Projects Node View](_media/tms-project-node-view.png)
 
----
-
-## Creating a New ARCAD Transformer Microservices Project
+## Create a new ARCAD Transformer Microservices Project
 
 Follow the steps below to create a new project:
 
@@ -25,7 +23,7 @@ This is a required field and the name set must be unique.
 Press **Enter** to continue and define the ARCAD environment.
 
 **Step 3** Select the ARCAD version.  
-Choose the application, environment, and version number from the drop-down list.
+Choose the Application, Environment, and Version number from the drop-down list.
 
 Press **Enter** to complete.
 
@@ -38,12 +36,10 @@ Make your changes and click **Save**.
 
 ![Edit Project](_media/tms-edit-project.png)
 
----
-
-## Deleting an ARCAD Transformer Microservices Project
+## Delete an ARCAD Transformer Microservices Project
 
 > [!Warning]
-> Deleted projects cannot be recovered.
+> Deleted projects **cannot** be recovered.
 
 To delete a project, right-click on the project in the list and select the **Delete Project** icon.
 

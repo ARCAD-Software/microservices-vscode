@@ -2,8 +2,6 @@
 
 In ARCAD Transformer Microservices, you can update the description of extraction analyses for both successful and failed extractions. This feature allows you to provide meaningful descriptions for your extraction results, making it easier to organize and track your extraction analyses.
 
----
-
 ## Overview
 
 The **Rename Extraction** functionality enables you to update the description of extraction analyses at the **Extraction & Externalization Node Level**. This is particularly useful for:
@@ -17,8 +15,6 @@ The **Rename Extraction** functionality enables you to update the description of
 > This feature is available at the **Extraction & Externalization Node Level** for:
 > - **Extraction Analyses:** Success and Failed Node
 > - **Externalization Analyses:** Success, Failure, and Incomplete Node
-
----
 
 ## Renaming an Extraction Description
 
@@ -34,13 +30,9 @@ Follow the subsequent steps to rename or update an extraction description:
 
 **Step 4** A text input dialog will appear. Enter the new description for the extraction analysis.
 
-![Rename Extraction - Input Dialog](_media/rename-extraction-input-dialog.jpg)
-
 **Step 5** Press **Enter** or click **OK** to confirm the new description.
 
 **Result** The extraction description is successfully updated and reflected in the **Extraction** node.
-
----
 
 ## Accessing Renaming Actions
 

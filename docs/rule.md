@@ -42,7 +42,7 @@ Users can view and manage two types of licenses:
 
 | Temporary Licenses | Permanent Licenses |
 | ------- | -------- |
-| - Short-term licenses for evaluation or trial purposes <br /> - Indicated by temporary status in license details <br /> - Useful for testing new features or environments | - Long-term production licenses <br /> - Appropriate for permanent deployments <br /> - Permanent status indicated in license details |
+| - Short-term licenses for evaluation or trial purposes <br /> - Indicated by temporary status in license details <br /> - Useful for testing new features or environments | - Long-term production licenses <br /> - Permanent status indicated in license details <br /> - Appropriate for permanent deployments  |
 
 To View the License Information, open the **License Management** section from the Main menu or Settings.  
 The system displays both:
@@ -64,7 +64,10 @@ Follow the subsequent steps to create a new rule.
 ![New Rule](_media/tms-create-rule.png)  
 ![New Rule from Project Node](_media/tms-create-rule-projectnode.png)
 
-**Step 2** Enter a unique **Name** for the new rule. This field is mandatory.
+**Step 2** Enter a unique **Name** for the new rule. 
+
+> [!NOTE]
+> This field is mandatory.
 
 Press **Enter** to proceed.
 
@@ -76,7 +79,6 @@ Press **Enter** to proceed.
 Press **Enter** to confirm.
 
 **Result** The new rule appears in the list under the **Rules** node.
-
 
 ## Moving an Existing ARCAD Transformer Microservices Rule
 
@@ -92,7 +94,6 @@ Follow the subsequent steps to move an existing rule to a different project.
 
 **Result** The rule is successfully moved and will now appear under the **Rules** node of the selected project.
 
-
 ## Working with an Extraction Analysis
 
 ### Viewing Extraction Analysis Properties
@@ -106,23 +107,22 @@ You can view:
 - Error and warning messages in the **Errors/Warning messages** tab
 - Externalization details in the **ILE Procedure** tab (visible only after externalization)
 
-**Step 1:** From the **Extraction** section in the **Rules** node, right-click on an extraction analysis.
+**Step 1** From the **Extraction** section in the **Rules** node, right-click on an extraction analysis.
 
-**Step 2:** Select the **Properties** option from the contextual menu.
+**Step 2** Select the **Properties** option from the contextual menu.
 
 ![Extraction Properties Menu](_media/tms-extraction-properties-menu.png)  
 ![Extraction Properties Dialog](_media/tms-extraction-properties.png)
-
 
 ### Renaming an Extraction Analysis
 
 You can update the description of extraction analyses to provide meaningful context and track changes. This action is available for both successful and failed extractions.
 
-**Step 1:** From the **Extraction** or **Externalization** section in the **Rules** node, right-click on an extraction analysis.
+**Step 1** From the **Extraction** or **Externalization** section in the **Rules** node, right-click on an extraction analysis.
 
-**Step 2:** Select the **Rename** option from the contextual menu.
+**Step 2** Select the **Rename** option from the contextual menu.
 
-**Step 3:** Enter the new description for the extraction.
+**Step 3** Enter the new description for the extraction.
 
 ![Rename Extraction](_media/tms-rename-extraction.png)
 
@@ -130,7 +130,6 @@ Press **Enter** to confirm.
 
 > **Reference**  
 > For more information about renaming extraction descriptions, refer to the [Rename Extraction](rename-extraction.md) documentation.
-
 
 ### Externalizing an Extraction Analysis
 
@@ -140,7 +139,6 @@ From the **Extraction** section in the **Rules** node, any successful extraction
 
 > **Reference**  
 > For more information about Externalization, refer to the [Externalization](externalizations.md) documentation.
-
 
 ### Launching a Code Similarity Search
 
@@ -152,7 +150,6 @@ To do so, right-click on the analysis and select the **Code Similarity > Search 
 > **Reference**  
 > For more information about Code Similarity, refer to the [Code Similarity](codesimilarity.md) documentation.
 
-
 ### Deleting an Extraction Analysis
 
 > [!WARNING]  
@@ -161,7 +158,6 @@ To do so, right-click on the analysis and select the **Code Similarity > Search 
 To delete an extraction analysis, right-click on the extraction analysis to delete from the **Extraction** or **Externalization** section and click the **Remove** option to confirm deletion.
 
 ![Delete Extraction Analysis](_media/tms-delete-extraction-ruleview.png)
-
 
 ## Deleting an ARCAD Transformer Microservices Rule
 

@@ -2,8 +2,6 @@
 
 The **MACRO COMMANDS** feature in ARCAD Transformer Microservices provides users with an efficient way to browse, manage, and execute macro command lists directly from the VSCode explorer. This feature streamlines macro operations with a user-friendly interface and comprehensive management capabilities.
 
----
-
 ## Overview
 
 The **MACRO COMMANDS Explorer** allows users to:
@@ -13,23 +11,19 @@ The **MACRO COMMANDS Explorer** allows users to:
 - ✅ Execute macros directly from the UI
 - ✅ Track execution results in real-time
 
----
-
 ## MACRO COMMANDS Explorer
 
 ![MACRO COMMANDS Explorer](_media/tms-macro-commands-explorer.png)
 
----
-
 ## Workflow: Getting Started with Macro Commands
 
-### Step 1: Add Library Lists
+### Add Library Lists
 
 **From the Explorer Toolbar:**
 
 **Step 1** Open the **MACRO COMMANDS** node in the ARCAD-Microservices explorer.
 
-**Step 2** Click the **+ (Plus Icon)** in the explorer toolbar next to MACRO COMMANDS.
+**Step 2** Click the **+** icon in the explorer toolbar next to MACRO COMMANDS.
 
 **Step 3** Select **Add Library List** from the options menu.
 
@@ -42,57 +36,41 @@ The **MACRO COMMANDS Explorer** allows users to:
 
 **From the Context Menu:**
 
-**Alternative Step 2** Right-click on **MACRO COMMANDS**.
+Right-click on **MACRO COMMANDS** and select **Add Library List** from the context menu. The library list is then added and available in the explorer for macro commands.
 
-**Alternative Step 3** Select **Add Library List** from the context menu.
-
-**Result** The library list is added and available in the explorer for macro commands.
-
----
-
-### Step 1b: Remove Library Lists
+### Remove Library Lists
 
 **From the Explorer Toolbar:**
 
 **Step 1** Locate the library list you want to remove in the MACRO COMMANDS Explorer.
 
-**Step 2** Click the **- ( Icon)** in the explorer toolbar next to the library.
+**Step 2** Click the **-** icon in the explorer toolbar next to the library.
 
 **Step 3** Confirm the removal when prompted.
 
 **From the Context Menu:**
 
-**Alternative Step 2** Right-click on the library list.
+Right-click on the library list and select **Remove Library List** from the context menu. Click **Ok** to confirm the removal. The library list is then removed from the explorer and the system.
 
-**Alternative Step 3** Select **Remove Library List** from the context menu.
-
-**Alternative Step 4** Confirm the removal.
-
-**Result** The library list is removed from the explorer and the system.
-
----
-
-### Step 2: View Macro Commands by Favorites
+### View Macro Commands by Favorites
 
 Once library lists are configured, the explorer displays:
 
-**Available Views:**
-- **All Macro Commands** - Complete list of all available macros (all will be visible to the user)
-- **Favorites** - Filtered view showing only macro commands marked as favorites
-  - **Version 1.0.3 Enhancement**: Now includes TMS-related macros and user-marked favorites
-  - **Quick Access**: Perfect for finding frequently used TMS macros without scrolling through all available macros
-  - **Library-Specific Filtering**: View macros from specific libraries (e.g., ARCAD_ENG) when needed
+**Available Views:**.
+- **All Macro Commands**: Complete list of all available macros (all will be visible by the user).
+- **Favorites**: Filtered view showing only macro commands marked as favorites.
+  - **Version 1.0.3 Enhancement**: Now includes TMS-related macros and user-marked favorites.
+  - **Quick Access**: Perfect for finding frequently used TMS macros without scrolling through all available macros.
+  - **Library-Specific Filtering**: View macros from specific libraries (example:, ARCAD_ENG) when needed.
 
 ![Favourite Macro Commands](_media/tms-favourite-macro-commands.jpg)
 
 **User Tips:**
-- **For TMS Macros Only**: If you want to see only TMS-related macros, navigate to the **Favorites** view where all TMS macros are readily available
+- **For TMS Macros only**: If you want to see only TMS-related macros, navigate to the **Favorites** view where all TMS macros are available
 - **For Complete List**: Use **All Macro Commands** view to access every available macro in your configured library lists
 - **Note:** Users can see all available macro commands in the **All Macro Commands** view. The **Favorites** view provides quick access to frequently used macros only.
 
----
-
-### Step 3: View Macro Definition
+### View Macro Definition
 
 To view the macro definition in JSON format:
 
@@ -110,16 +88,14 @@ To view the macro definition in JSON format:
 
 **Step 2** Double-click on the macro command.
 
-**Result** The macro definition displays in JSON format showing:
+**Result** The macro definition displays in JSON format:
 - Macro ID
 - Name and description
 - Definition details
 - Parameters and configuration
 - All macro properties and settings
 
----
-
-### Step 4: Execute Macro Commands
+### Execute Macro Commands
 
 #### Direct Execution
 
@@ -133,39 +109,35 @@ To execute a macro command directly:
 
 ![Macro Execute](_media/tms-macro-execute.png)
 
-**Step 4** The system executes the macro and displays:
-- Execution status
-- Processing progress
-- Results and output
+**Step 4** The system executes the macro and displays the:
+- execution status,
+- processing progress, and
+- results and output.
 
 **Result** The macro executes successfully and results are displayed.
 
----
-
-### Step 5: View Macro Execution Logs
+### View Macro Execution Logs
 
 After executing a macro command, you can view detailed logs in the **ARCAD Macro Logs** panel:
 
-**Step 1** After macro execution completes, the **ARCAD Macro Logs** panel opens automatically.
+**Step 1** After the macro execution completes, the **ARCAD Macro Logs** panel opens automatically.
 
-**Step 2** Review the logs displaying:
-- Execution status (Success/Failed)
-- Detailed execution output
-- Error messages (if any)
-- Processing timestamps
-- Performance metrics
+**Step 2** Review the logs. They display information about the:
+- execution status (Success/Failed),
+- detailed execution output,
+- error messages (if any),
+- processing timestamps, and
+- performance metrics.
 
 ![ARCAD Macro Logs Panel](_media/tms-macro-output-panel.png)
 
 **Step 3** Use the logs to:
-- ✅ Verify macro execution success
-- ✅ Troubleshoot any errors
-- ✅ Monitor macro performance
-- ✅ Track execution history
+- check for the macro execution success,
+- troubleshoot any errors,
+- monitor macro performance, or
+- track execution history.
 
 **Result** Complete macro execution details are visible in the ARCAD Macro Logs panel.
-
----
 
 ### Macro Execution History (Version 1.0.3+)
 
@@ -196,19 +168,23 @@ After executing macros, you can track execution history to monitor macro perform
 
 After executing a macro command, the explorer displays:
 
----
+### Library Management at Application Level (Version 1.0.3+)
 
-## Library Management at Application Level (Version 1.0.3+)
-
-Library lists at the Application level provide organization and access to macros across your entire application configuration. Common library names include `ARCAD_ENG` and other application-specific libraries.
+The library lists at the Application level provide organization and access to macros across your entire application configuration. Common library names include `ARCAD_ENG` and other application-specific libraries.
 
 ### Adding Library Lists at Application Level
 
-You can add a Library list either by using the **+ (Plus Icon)** in the Macro Commands explorer toolbar or through the Context menu. To do so, navigate to the **Application** node or right-click on it, then select the **Add Library List** option. Enter the Library details (the **Library Name** (for example, `ARCAD_ENG`), the **Library Path**, and the **Access Permissions**), and click **Save** to confirm.
+You can add a Library list either by using the **+** icon in the Macro Commands explorer toolbar or through the Context menu. To do so, navigate to the **Application** node or right-click on it, then select the **Add Library List** option.  
+Enter the Library details: 
+- the **Library Name** (for example, `ARCAD_ENG`), 
+- the **Library Path**, and 
+- the **Access Permissions**.
+
+Click **Save** to confirm.
 
 ### Removing Library Lists at Application Level
 
-You can remove a Library list either by using the **- (Minus Icon)** or through the Context menu. To do so, locate the library under the **Application** node and click the **- (Minus Icon)** next to it, or right-click on the library list and select the **Remove Library List** option, then click OK to confirm. The library is then removed from the system.
+You can remove a Library list either by using the **-** icon or through the Context menu. To do so, locate the library under the **Application** node and click the **-** icon next to it, or right-click on the library list and select the **Remove Library List** option, then click OK to confirm. The library is then removed from the system.
 
 ## Best Practices
 
@@ -218,10 +194,8 @@ You can remove a Library list either by using the **- (Minus Icon)** or through 
 - **Monitor Results:** Track execution results for successful completion
 - **Document Usage:** Keep records of macro executions for audit trails
 
----
-
 ## Related Features
 
-- **[ARCAD Transformer Microservices](index.md)** - Overview
-- **[Rules Management](rule.md)** - Work with extraction rules
-- **[Web Services](web-services.md)** - Deploy web services
+- **[ARCAD Transformer Microservices](index.md)** Overview
+- **[Rules Management](rule.md)** Work with extraction rules
+- **[Web Services](web-services.md)** Deploy web services

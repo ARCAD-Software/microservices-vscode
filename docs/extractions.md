@@ -25,7 +25,7 @@ The Parameter field displays parameters required for the extracted procedure.
 #### Local Field
 The Local field displays local variables that remain within the extracted code.
 
-| Information Shown |
+| Information displayed |
 | --- |
 | Local variable names |
 | Variable types |
@@ -35,7 +35,7 @@ The Local field displays local variables that remain within the extracted code.
 #### Extraction Files
 The Extraction Files section lists all the source files involved in the extraction.
 
-| Information Shown |
+| Information displayed |
 | --- |
 | Source file names |
 | File types |
@@ -45,7 +45,7 @@ The Extraction Files section lists all the source files involved in the extracti
 #### Code to be Extracted
 The Code to be Extracted displays the actual code sections selected for extraction.
 
-| Information Shown |
+| Information displayed |
 | --- |
 | Line numbers |
 | Code segments |
@@ -55,7 +55,7 @@ The Code to be Extracted displays the actual code sections selected for extracti
 #### External Call View
 The External Call view displays external calls and dependencies.
 
-| Information Shown |
+| Information displayed |
 | --- |
 | External program/procedure calls |
 | External data references |
@@ -67,14 +67,14 @@ The External Call view displays external calls and dependencies.
 
 **Step 1** From the **Rules** node, expand the **Extraction** section and right-click on an extraction analysis.
 
-**Step 2** click the **Properties** option to open the detailed analysis view.
+**Step 2** Click the **Properties** option to open the detailed analysis view.
 
 **Step 3** Review the organized sections. Follow the subsequent review process:
 
-1. Examine the parameter requirements,
-2. Review the local field definitions,
-3. Check the extraction files involved,
-4. Analyze the code to be extracted, and
+1. Examine the parameter requirements.
+2. Review the local field definitions.
+3. Check the extraction files involved.
+4. Analyze the code to be extracted.
 5. Review the external call configuration.
 
 **Result** The Extraction Analysis view is displayed and you have comprehensive visibility into all aspects of your extraction analysis.

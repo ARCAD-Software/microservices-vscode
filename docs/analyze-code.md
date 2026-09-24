@@ -16,7 +16,7 @@ Each extraction analysis allows you to review the results of the process, once i
 
 ![Code Analysis](_media/tms-analyze.png)
   
-**Step 4** Select the **Rule** to base the analysi on.
+**Step 4** Select the **Rule** to base the analysis on.
 
 ![Set Rule](_media/tms-analysis-rule.png)
 

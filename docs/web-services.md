@@ -5,8 +5,6 @@ The Web services management functionality offers a centralized management approa
 
 By taking advantage of several pieces of data generated during the process of externalizing procedure, ARCAD Transformer Microservices predefines a configuration of the appropriate web service to be created.
 
----
-
 ## Web Services Management
 
 Web Services management in ARCAD Transformer Microservices uses **QShell commands** from the IBM i Integrated Web Services server.  
@@ -33,10 +31,8 @@ Web services managed by ARCAD Transformer Microservices can be accessed and mana
 > The system exclusively supports ILE objects, specifically ILEPGM and ILESRVPGM, created by ARCAD Transformer Microservices.
 
 > [!NOTE]   
-> This feature is limited to management actions pertinent to ARCAD Transformer Microservices functionalities.  
-Additionally, certain operations may experience minor delays.
-
----
+> This feature is limited to management actions related to ARCAD Transformer Microservices functionalities.  
+Additionally, some operations may experience minor delays.
 
 ## Deploying a Web Service
 
@@ -81,8 +77,6 @@ Each input parameter can be edited and must follow these rules:
 > [!NOTE]  
 > Auto-completion of the URI is provided to showcase its full syntax.
 
----
-
 ## Starting or Stopping a Web Service
 
 <details>
@@ -113,8 +107,6 @@ Each input parameter can be edited and must follow these rules:
 **Result**  The server is successfully started or stopped.
 </details>
 
----
-
 ## Updating a Web Service
 
 You should update the web service if:
@@ -130,7 +122,7 @@ You should update the web service if:
 
 ![Redeploy web service](/_media/tms-redeploy-webservice.png)
 
-**Step 3** Specify the Updated Files** (`.properties` and `.pcml`)
+**Step 3** Specify the **Updated Files** (`.properties` and `.pcml`)
 
 Click **Finish** to complete the update.
 </details>
@@ -151,8 +143,6 @@ Click **Finish** to complete the update.
 Click **Save** to complete the process.
 
 </details>
-
----
 
 ## Deleting a Web Service
 
@@ -186,8 +176,6 @@ All references from your system are removed except the `.pcml` and `.properties`
 
 </details>
 
----
-
 ## Viewing Web Serverice Properties
 
 <details>
@@ -208,7 +196,7 @@ All references from your system are removed except the `.pcml` and `.properties`
 
 **Step 1** Expand the **Web Services** node under your **Opened Version**.
 
-**Step 2** Right-click on the web service and select the **Properties**option.  
+**Step 2** Right-click on the web service and select the **Properties** option.  
 
 ![Web service properties](/_media/tms-versionnode-webservice-properties.png)
 
@@ -216,19 +204,14 @@ All references from your system are removed except the `.pcml` and `.properties`
 
 </details>
 
----
-
 ## Properties
 
 ![Web service properties](/_media/tms-webservice-properties-panel-view1.png)
 ![Web service properties](/_media/tms-webservice-properties-panel-view2.png)
 
----
-
 ## Swagger
 
 ![Web service properties](/_media/tms-webservice-properties-swagger.png)
 
->  **Reference**  
-> For more information, refer to the [Integrated Web Services Server Administration and Programming Guide](https://www.ibm.com/docs/en/i/7.4?topic=guide-integrated-web-services-server-administration-programming).
-
+<!--  **Reference**  
+> For more information, refer to the [Integrated Web Services Server Administration and Programming Guide](https://www.ibm.com/docs/en/i/7.4?topic=guide-integrated-web-services-server-administration-programming).-->

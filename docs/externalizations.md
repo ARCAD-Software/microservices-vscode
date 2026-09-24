@@ -62,7 +62,7 @@ Complete the following parameters.
 |Parameter | Description |
 |--- | ---|
 | Name | Provide a unique name for this component. |
-| Type | Select the appropriate component type from the available options (e.g., `RPGLE`). |
+| Type | Select the appropriate component type from the available options (example:, `RPGLE`). |
 | Source File | Choose the source file from the drop-down list, which will be populated based on your ARCAD application topology.|
 
 **Prototype**
@@ -128,8 +128,8 @@ A project-level **naming template** now lets you standardize generated parameter
 
 | Setting | Description |
 |---|---|
-| **Prefix Name** | Literal prefix prepended to every generated parameter name (e.g. `p_`) |
-| **Suffix Name** | Literal suffix appended to every generated parameter name (e.g. `_in`) |
+| **Prefix Name** | Literal prefix prepended to every generated parameter name (example: `p_`) |
+| **Suffix Name** | Literal suffix appended to every generated parameter name (example: `_in`) |
 | **Case Format** | Case convention applied to the base name: `camelCase`, `PascalCase`, `UPPERCASE`, `lowercase`, `snake_case`, `UPPER_SNAKE_CASE` |
 
 Each generated name is built as `<prefix> + <base name converted to the selected case format> + <suffix>`. The base name is tokenized from the original field name — underscores, case transitions, and the RPG special characters `$ # @` are treated as token boundaries — before the case rule is applied.

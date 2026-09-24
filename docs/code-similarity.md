@@ -13,13 +13,13 @@ You can access these analyses from:
 
 ![Extraction View](_media/tms-code-similarity-history-extractionview.png)
 
-### Execution History
+## Execution History
 
 ![Execution History](_media/tms-code-similarity-execution-history.png)
 
 Results appear in the **Microservices Code Similarity Result** view, which summarizes key details where similar code is found.
 
-#### Execution Result
+### Execution Result
 
 ![Execution Result](_media/tms-code-similarity-execution-result.png)
 
@@ -30,11 +30,9 @@ The results view provides details about the following elements:
 From the **Similarity Analysis Result**, you can also initiate a new **Code Similarity** search or perform an **Extraction Analysis**.
 
 > **Reference**:  
-> For more information about the process behind the code similarity search works, refer to the [Principles of a Code Similarity](code-similarity-principles.md) documentation.
+> For more information about how the process behind the code similarity search works, refer to the [Principles of a Code Similarity](code-similarity-principles.md) documentation.
 
----
-
-## Launching a Code Similarity Analysis From Component
+## Launching a Code Similarity Analysis from a Component
 
 Follow the subsequent steps to launch a Code Similarity analysis from a component.
 
@@ -55,17 +53,19 @@ Follow the subsequent steps to launch a Code Similarity analysis from a componen
 **Step 3** Configure the parameters and fill out the **Code Similarity** settings:
 
 - **Project**: select an ARCAD Transformer Microservices Project from the ones available in the dropdown list. If none exists, click **New Project** to create a new one.
-- **Minimum Similarity Match (%)**: set the similarity threshold (1–100).
+- **Minimum Similarity Match (%)**: set the similarity threshold. The expected value is a string (%) between 1 and 100.
 
 > [!TIP]  
 > A 50% match means a 10-line block must share at least 5 lines with another block to be determined as similar.
 
-- **Minimum Components Found**: Set how many components must include similar code (1–100).
+- **Minimum Components Found**: Set how many components must include similar code.
 
 > [!TIP]  
 > If set to 5, results are shown only when similar blocks are found in five or more components.
 
-Starting v1.0.3, pseudocode-based similarity analysis is possible. The pseudocode is automatically generated for similarity analysis, enabling multiple code similarity executions with broader matching capabilities.
+> [!Note] 
+> Starting **v1.0.3**, pseudocode-based similarity analysis is possible.  
+> The pseudocode is automatically generated for similarity analysis, enabling multiple code similarity executions with broader matching capabilities.
 
 The **Generate Pseudo Code** option remains available in the **Code Similarity** tab if you want to trigger generation in advance.
 
@@ -73,14 +73,12 @@ The **Generate Pseudo Code** option remains available in the **Code Similarity**
 > Make sure you have generated the Pseudocode before performing code similarity searches.
 
 > [!NOTE]
-> Starting v1.0.3, Pseudocode generation is no longer a manual option to select for each similarity match (yes/no choice). Pseudocode generation is now automatically handled to streamline the analysis workflow and provide consistent results for multiple code similarity executions.
-
+> Starting **v1.0.3**, Pseudocode generation is no longer a manual option to select for each similarity match (yes/no choice).  
+> Pseudocode generation is now automatically handled to streamline the analysis workflow and provide consistent results for multiple code similarity executions.
 
 Press **Enter** to launch the analysis.
 
----
-
-## Launching a Code Similarity Analysis From Existing Extraction
+## Launching a Code Similarity Analysis from an existing Extraction
 
 > [!Note]
 > Code Similarity can be executed at the *Repository* level.
@@ -98,13 +96,11 @@ Follow the subsequent steps to search for similar code blocks from an existing e
 
 ![Code Similarity Option](_media/tms-codesimilarity-extractionview.png)
 
----
-
 ## Working with Code Similarity Results
 
 ### Navigating Results
 
-After the search completes, you can view and compare pseudocode by right-clicking on a match in the **Code Similarity Results** view and selecting the **Show Compared Pseudocode** option.
+After the search is completed, you can view and compare pseudocode by right-clicking on a match in the **Code Similarity Results** view and selecting the **Show Compared Pseudocode** option.
 
 This opens a comparison panel:
 
@@ -136,12 +132,10 @@ You can also perform an **Extraction Analysis** by right-clicking on a match in 
 > **Reference**:  
 > For more information, refer to the [Extraction Analysis](analyze-code.md) documentation.
 
----
-
 ## Deleting a Code Similarity Search
 
 > [!WARNING]  
-> Deleted similarity searches cannot be recovered.
+> Deleted similarity searches **cannot** be recovered.
 
 To delete a Code Similarity search, expand the **Project** node > **Code Similarity**, right-click on the code similarity search to delete and click on  **Remove**.
 

@@ -26,7 +26,9 @@ These two extensions are:
 ![TMS Dependencies](_media/tms-dependencies.png)
 
 Once the extension is successfully installed, you have to set up the connection to the server.  
+
 For more information, refer to the [Server Connection Configuration](/server-connection.md) documentation.
+
 > [!WARNING]
 > If you uninstall the **Transformer Microservices** extension from VSCode, these two dependencies are not automatically uninstalled.  
 However, if you try to uninstall one of the dependencies, it automatically uninstalls the **Transformer Microservices** extension from VSCode.
