@@ -81,4 +81,4 @@ On top of that, it automates the deployment of REST web services for IBM i ILE o
 
 ---
 
-Need the server-side setup? See the <a href="ARCAD-TMS_26.0_A4_Installation~Guide.pdf" target="_blank">Microservices Server Installation Guide</a>, or reach out via [Contact Us](https://www.arcadsoftware.com/about/contact/).
+Need the server-side setup? See the <a href="ARCAD-TMS_26.2_A4_Installation~Guide.pdf" target="_blank">Microservices Server Installation Guide</a>, or reach out via [Contact Us](https://www.arcadsoftware.com/about/contact/).

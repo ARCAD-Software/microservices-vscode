@@ -33,6 +33,6 @@
     * [<span class="sidebar-icon">🕒</span> Version History](version-history.md)
 
 * <span class="sidebar-group">Resources</span>
-    * <a href="ARCAD-TMS_26.0_A4_Installation~Guide.pdf" target="_blank"><span class="sidebar-icon">📄</span> Server Installation Guide</a>
+    * <a href="ARCAD-TMS_26.2_A4_Installation~Guide.pdf" target="_blank"><span class="sidebar-icon">📄</span> Server Installation Guide</a>
     * <a href="https://marketplace.visualstudio.com/items?itemName=arcadsoftware.arcad-microservices" target="_blank"><span class="sidebar-icon">🧩</span> VSCode Marketplace</a>
     * <a href="https://www.arcadsoftware.com/about/contact/" target="_blank"><span class="sidebar-icon">✉️</span> Contact Us</a>
